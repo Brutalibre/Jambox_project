@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal">"
+ 
+    <!-- Input Username -->
+    <EditText android:id="@+id/inputUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:hint="@string/username"
+        android:inputType="text"/>
+ 
+    <!-- Input password -->
+    <EditText android:id="@+id/inputPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:lines="4"
+        android:gravity="top"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+ 
+    <!-- Button login -->
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginTop="25dip"/>
+ 
+    <!--  Button to create a new user screen -->
+    <Button android:id="@+id/btnCreateUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createUser"
+        android:layout_marginTop="25dip"/>
+ 
+</LinearLayout>
+<!-- From: file:/C:/Users/Val/AndroidstudioProjects/DatabaseConnect_v2/app/src/main/res/layout/activity_login.xml -->

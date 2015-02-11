@@ -1,0 +1,4 @@
+C:\Users\Val\AndroidstudioProjects\DatabaseConnect_v2\app\build\intermediates\classes\debug
+C:\Users\Val\AndroidstudioProjects\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ea0bf9e763895717683157ff6208a9f2ebcfc799.jar
+C:\Users\Val\AndroidstudioProjects\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-ea3c0a2b8571c1cc1cbd1e5b6281247aed00855f.jar
+C:\Users\Val\AndroidstudioProjects\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\classes-1e9ce421473b97bf5dd353f19437e253c2c4ac84.jar

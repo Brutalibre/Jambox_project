@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+ 
+    <!--  Sample Dashboard screen with buttons -->
+    
+    
+    <!-- To check the user -->
+    <TextView android:id="@+id/userData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="25dip"/>
+
+    <!--  Button to JAM ! -->
+    <Button android:id="@+id/btnJam"
+        android:background="@drawable/jam_button"
+        android:text="@string/jam"
+        style="@style/JamButton"/>
+
+    <!--  Button to view all users screen -->
+    <Button android:id="@+id/btnViewUsers"
+        android:background="@drawable/button"
+        android:text="@string/viewUsers"
+        style="@style/Button"/>
+ 	
+    <!--  Button to view your profile -->
+    <Button android:id="@+id/btnViewProfile"
+        android:background="@drawable/button"
+        android:text="@string/viewProfile"
+        style="@style/Button"/>
+    
+    <!--  Button to view all friends screen -->
+    <Button android:id="@+id/btnViewFriends"
+        android:background="@drawable/button"
+        android:text="@string/viewFriends"
+        style="@style/Button"/>
+    
+    <!--  Button to add a friend screen -->
+    <Button android:id="@+id/btnAddFriend"
+        android:background="@drawable/button"
+        android:text="@string/addFriend"
+        style="@style/Button"/>
+ 
+    <!--  Button to logout : back to login screen -->
+    <Button android:id="@+id/btnLogout"
+        android:background="@drawable/button"
+        android:text="@string/logout"
+        style="@style/Button"/>
+ 
+</LinearLayout>
+<!-- From: file:/C:/Users/Val/AndroidstudioProjects/DatabaseConnect_v2/app/src/main/res/layout/activity_main_screen.xml -->

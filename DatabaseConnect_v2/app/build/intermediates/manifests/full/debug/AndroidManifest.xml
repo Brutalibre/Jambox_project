@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.val.databaseconnect_v2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.val.databaseconnect_v2.LoginActivity"
+            android:label="Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Screen Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.MainScreenActivity"
+            android:label="Jam&apos;Box" >
+        </activity>
+
+        <!-- All Users Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.AllUsersActivity"
+            android:label="Jam&apos;Box - All Users" >
+        </activity>
+
+        <!-- All Friends Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.AllFriendsActivity"
+            android:label="Jam&apos;Box - All Friends" >
+        </activity>
+
+        <!-- Add User Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.NewUserActivity"
+            android:label="Jam&apos;Box - Add New User" >
+        </activity>
+
+        <!-- Display User Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.DisplayUserActivity"
+            android:label="Jam&apos;Box - Display User" >
+        </activity>
+
+        <!-- Add Friend Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.AddFriendActivity"
+            android:label="Jam&apos;Box - Add Friend" >
+        </activity>
+
+        <!-- Jam Activity -->
+        <activity
+            android:name="com.val.databaseconnect_v2.JamActivity"
+            android:label="Jam&apos;Box - Add Friend" >
+        </activity>
+    </application>
+
+</manifest>
