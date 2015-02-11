@@ -71,7 +71,7 @@ public class JamActivity extends ListActivity {
 
             @Override
             public void onClick(View v) {
-// salut salut 
+
                 for (int i = 0; i < lv.getCheckedItemPosition(); i++) {
 
                     Log.d("truc", String.valueOf(lv.getCheckedItemIds()[i]));
