@@ -28,7 +28,7 @@ public class NewUserActivity extends Activity {
 	EditText inputPassword;
 	
 	// url to create new user
-	private static String url_create_user = "http://" + Global.host + "/jambox/createUser.php";
+	private static String url_create_user = "http://" + Global.host + "/createUser.php";
 	
 	// JSON node names
 	private static final String TAG_SUCCESS = "success";

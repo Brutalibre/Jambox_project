@@ -24,7 +24,7 @@ public class SessionManager {
 	
 	Context _context;
 	
-	String url_modif_online = "http://" + Global.host + "/jambox/setOnOffline.php";
+	String url_modif_online = "http://" + Global.host + "/setOnOffline.php";
 	JSONParser jsonParser;
 	
 	// Shared pref mode

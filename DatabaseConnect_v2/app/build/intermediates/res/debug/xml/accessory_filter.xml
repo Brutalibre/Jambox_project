@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+ 	<!--<usb-accessory manufacturer="Google, Inc." model="DemoKit" version="1.0" />-->
+    <!--<usb-accessory manufacturer="Circuits@Home, ltd." model="USB Host Shield" version="1.0" />-->
+    <usb-accessory manufacturer="Arduino SA" model="Arduino Terminal" version="1.0"/>
+</resources><!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/xml/accessory_filter.xml -->

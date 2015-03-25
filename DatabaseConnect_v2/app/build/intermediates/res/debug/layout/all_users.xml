@@ -11,12 +11,6 @@
         android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
-
-
-    <Button
-        android:id="@+id/goBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
  
 </LinearLayout>
-<!-- From: file:/C:/Users/Val/AndroidstudioProjects/DatabaseConnect_v2/app/src/main/res/layout/all_users.xml -->
+<!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/layout/all_users.xml -->

@@ -39,7 +39,7 @@ public class LoginActivity extends Activity {
 	JSONArray user = null;
 	
 	// url to get all the products list
-	private static String url_connect_user= "http://" + Global.host + "/jambox/userConnect.php";
+	private static String url_connect_user= "http://" + Global.host + "/userConnect.php";
 	
 	// JSON Nodes names
 	private static final String TAG_SUCCESS = "success";

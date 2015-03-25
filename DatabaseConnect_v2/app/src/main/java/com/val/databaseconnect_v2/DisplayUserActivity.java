@@ -33,7 +33,7 @@ public class DisplayUserActivity extends Activity {
 	
 	JSONParser jsonParser = new JSONParser();
 	
-	private static final String url_get_user_details = "http://" + Global.host + "/jambox/displayUserProfile.php";
+	private static final String url_get_user_details = "http://" + Global.host + "/displayUserProfile.php";
 	
 	// JSON node names
 	private static final String TAG_SUCCESS = "success";

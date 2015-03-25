@@ -32,7 +32,7 @@ public class AllFriendsActivity extends ListActivity {
 	SessionManager session;
 	
 	// url to get all the products list
-	private static String url_all_friends= "http://" + Global.host + "/jambox/displayAllFriends.php";
+	private static String url_all_friends= "http://" + Global.host + "/displayAllFriends.php";
 	
 	// JSON Nodes names
 	private static final String TAG_SUCCESS = "success";
@@ -97,7 +97,7 @@ public class AllFriendsActivity extends ListActivity {
             Log.d("username", cUser);
             
             // Building Parameters
-            List<NameValuePair> params = new ArrayList<NameValuePair>();
+            List<NameValuePair> params = new ArrayList<>();
             params.add(new BasicNameValuePair("username", cUser));
             // getting JSON string from URL
             JSONObject json = jParser.makeHttpRequest(url_all_friends, "GET", params);

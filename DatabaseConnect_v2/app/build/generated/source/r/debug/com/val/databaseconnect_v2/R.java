@@ -8,34 +8,66 @@
 package com.val.databaseconnect_v2;
 
 public final class R {
+    public static final class array {
+        public static final int pref_clear_action_entries=0x7f050000;
+        public static final int pref_display_colors_entries=0x7f050001;
+        public static final int pref_display_orientation_entries=0x7f050002;
+        public static final int pref_font_size_entries=0x7f050003;
+        public static final int pref_font_size_entryvalues=0x7f050004;
+        public static final int pref_font_typeface_entries=0x7f050005;
+        public static final int pref_keyboard_type_entries=0x7f050006;
+        public static final int pref_keyboard_type_entryvalues=0x7f050007;
+        public static final int pref_show_messages_entries=0x7f050008;
+        public static final int pref_show_messages_entryvalues=0x7f050009;
+    }
     public static final class attr {
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int button=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int jam_button=0x7f020002;
+        public static final int connect=0x7f020001;
+        public static final int exit=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int icon=0x7f020004;
+        public static final int jam_button=0x7f020005;
+        public static final int keyboard=0x7f020006;
+        public static final int notification=0x7f020007;
+        public static final int preferences=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int btnAddFriend=0x7f080009;
-        public static final int btnCreateUser=0x7f080003;
-        public static final int btnJam=0x7f080005;
-        public static final int btnLogin=0x7f080002;
-        public static final int btnLogout=0x7f08000a;
-        public static final int btnViewFriends=0x7f080008;
-        public static final int btnViewProfile=0x7f080007;
-        public static final int btnViewUsers=0x7f080006;
-        public static final int email=0x7f08000e;
-        public static final int goBtn=0x7f08000c;
-        public static final int inputEmail=0x7f08000b;
-        public static final int inputPwd=0x7f080001;
-        public static final int inputUsername=0x7f080000;
-        public static final int userData=0x7f080004;
-        public static final int username=0x7f08000d;
+        public static final int LinearLayout01=0x7f0a0011;
+        public static final int action_settings=0x7f0a001a;
+        public static final int btnAddFriend=0x7f0a0009;
+        public static final int btnCreateUser=0x7f0a0003;
+        public static final int btnJam=0x7f0a0005;
+        public static final int btnLogin=0x7f0a0002;
+        public static final int btnLogout=0x7f0a000a;
+        public static final int btnViewFriends=0x7f0a0008;
+        public static final int btnViewProfile=0x7f0a0007;
+        public static final int btnViewUsers=0x7f0a0006;
+        public static final int button21=0x7f0a0014;
+        public static final int button22=0x7f0a0015;
+        public static final int customTitle=0x7f0a0019;
+        public static final int editText1=0x7f0a0013;
+        public static final int email=0x7f0a000e;
+        public static final int goBtn=0x7f0a000c;
+        public static final int inputEmail=0x7f0a000b;
+        public static final int inputLayout=0x7f0a0012;
+        public static final int inputPwd=0x7f0a0001;
+        public static final int inputUsername=0x7f0a0000;
+        public static final int list=0x7f0a0010;
+        public static final int mainMenuConnect=0x7f0a001c;
+        public static final int mainMenuExit=0x7f0a001d;
+        public static final int mainMenuSettings=0x7f0a001b;
+        public static final int scrollView1=0x7f0a0016;
+        public static final int textView22=0x7f0a0017;
+        public static final int toggleInputButton=0x7f0a0018;
+        public static final int userData=0x7f0a0004;
+        public static final int userPicture=0x7f0a000f;
+        public static final int username=0x7f0a000d;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
@@ -43,32 +75,102 @@ public final class R {
         public static final int add_friend=0x7f030002;
         public static final int add_user=0x7f030003;
         public static final int all_users=0x7f030004;
-        public static final int choose_users=0x7f030005;
-        public static final int display_user=0x7f030006;
-        public static final int jam=0x7f030007;
-        public static final int list_user=0x7f030008;
+        public static final int all_users_button=0x7f030005;
+        public static final int choose_users=0x7f030006;
+        public static final int display_user=0x7f030007;
+        public static final int jam=0x7f030008;
+        public static final int list_user=0x7f030009;
+        public static final int main=0x7f03000a;
+        public static final int terminal=0x7f03000b;
+        public static final int titlebar=0x7f03000c;
     }
     public static final class menu {
-        public static final int display_user=0x7f070000;
-        public static final int main_screen=0x7f070001;
+        public static final int display_user=0x7f090000;
+        public static final int main_menu=0x7f090001;
+        public static final int main_screen=0x7f090002;
     }
     public static final class string {
-        public static final int action_settings=0x7f050000;
-        public static final int addFriend=0x7f050001;
-        public static final int app_name=0x7f050002;
-        public static final int createUser=0x7f050003;
-        public static final int email=0x7f050004;
-        public static final int hello_world=0x7f050005;
-        public static final int jam=0x7f050006;
-        public static final int login=0x7f050007;
-        public static final int logout=0x7f050008;
-        public static final int password=0x7f050009;
-        public static final int title_activity_display_user=0x7f05000a;
-        public static final int username=0x7f05000b;
-        public static final int usernameOrEmail=0x7f05000c;
-        public static final int viewFriends=0x7f05000d;
-        public static final int viewProfile=0x7f05000e;
-        public static final int viewUsers=0x7f05000f;
+        public static final int action_settings=0x7f070000;
+        public static final int addFriend=0x7f070001;
+        public static final int app_name=0x7f070002;
+        public static final int cancel_string=0x7f070003;
+        public static final int connect_dialog_title=0x7f070004;
+        public static final int connect_fail_message=0x7f070005;
+        public static final int connected_to_usb_device_message=0x7f070006;
+        public static final int createUser=0x7f070007;
+        public static final int disconnected_from_usb_device_message=0x7f070008;
+        public static final int email=0x7f070009;
+        public static final int hello_world=0x7f07000a;
+        public static final int jam=0x7f07000b;
+        public static final int login=0x7f07000c;
+        public static final int logout=0x7f07000d;
+        public static final int main_menu_connect_name=0x7f07000e;
+        public static final int main_menu_exit_name=0x7f07000f;
+        public static final int main_menu_reconnect_name=0x7f070010;
+        public static final int main_menu_settings_name=0x7f070011;
+        public static final int no_permissions_for_this_usb_device_message=0x7f070012;
+        public static final int no_usb_devices_attached_message=0x7f070013;
+        public static final int ok_string=0x7f070014;
+        public static final int password=0x7f070015;
+        public static final int pref_category_application_key=0x7f070016;
+        public static final int pref_category_application_title=0x7f070017;
+        public static final int pref_category_display_key=0x7f070018;
+        public static final int pref_category_display_title=0x7f070019;
+        public static final int pref_clear_action_default=0x7f07001a;
+        public static final int pref_clear_action_key=0x7f07001b;
+        public static final int pref_clear_action_summary=0x7f07001c;
+        public static final int pref_clear_action_title=0x7f07001d;
+        public static final int pref_close_on_detach_key=0x7f07001e;
+        public static final int pref_close_on_detach_summary=0x7f07001f;
+        public static final int pref_close_on_detach_title=0x7f070020;
+        public static final int pref_display_colors_default=0x7f070021;
+        public static final int pref_display_colors_key=0x7f070022;
+        public static final int pref_display_colors_summary=0x7f070023;
+        public static final int pref_display_colors_title=0x7f070024;
+        public static final int pref_display_orientation_default=0x7f070025;
+        public static final int pref_display_orientation_key=0x7f070026;
+        public static final int pref_display_orientation_summary=0x7f070027;
+        public static final int pref_display_orientation_title=0x7f070028;
+        public static final int pref_font_size_default=0x7f070029;
+        public static final int pref_font_size_key=0x7f07002a;
+        public static final int pref_font_size_summary=0x7f07002b;
+        public static final int pref_font_size_title=0x7f07002c;
+        public static final int pref_font_typeface_default=0x7f07002d;
+        public static final int pref_font_typeface_key=0x7f07002e;
+        public static final int pref_font_typeface_summary=0x7f07002f;
+        public static final int pref_font_typeface_title=0x7f070030;
+        public static final int pref_keyboard_type_default=0x7f070031;
+        public static final int pref_keyboard_type_key=0x7f070032;
+        public static final int pref_keyboard_type_summary=0x7f070033;
+        public static final int pref_keyboard_type_title=0x7f070034;
+        public static final int pref_local_echo_key=0x7f070035;
+        public static final int pref_local_echo_summary=0x7f070036;
+        public static final int pref_local_echo_title=0x7f070037;
+        public static final int pref_show_keyboard_default=0x7f070038;
+        public static final int pref_show_keyboard_key=0x7f070039;
+        public static final int pref_show_keyboard_summary=0x7f07003a;
+        public static final int pref_show_keyboard_title=0x7f07003b;
+        public static final int pref_show_messages_default=0x7f07003c;
+        public static final int pref_show_messages_key=0x7f07003d;
+        public static final int pref_show_messages_summary=0x7f07003e;
+        public static final int pref_show_messages_title=0x7f07003f;
+        public static final int prefix_in=0x7f070040;
+        public static final int prefix_out=0x7f070041;
+        public static final int starter_app_name=0x7f070042;
+        public static final int terminal_activity_clear=0x7f070043;
+        public static final int terminal_activity_name=0x7f070044;
+        public static final int terminal_activity_send=0x7f070045;
+        public static final int terminal_activity_title=0x7f070046;
+        public static final int title_activity_display_user=0x7f070047;
+        public static final int usb_device_attached=0x7f070048;
+        public static final int usb_device_detached=0x7f070049;
+        public static final int username=0x7f07004a;
+        public static final int usernameOrEmail=0x7f07004b;
+        public static final int viewFriends=0x7f07004c;
+        public static final int viewProfile=0x7f07004d;
+        public static final int viewUsers=0x7f07004e;
+        public static final int wait_dialog_message=0x7f07004f;
+        public static final int wait_dialog_title=0x7f070050;
     }
     public static final class style {
         /** 
@@ -79,11 +181,15 @@ public final class R {
  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int Button=0x7f060002;
-        public static final int JamButton=0x7f060003;
+        public static final int AppTheme=0x7f080001;
+        public static final int Button=0x7f080002;
+        public static final int JamButton=0x7f080003;
+    }
+    public static final class xml {
+        public static final int accessory_filter=0x7f040000;
+        public static final int preferences=0x7f040001;
     }
 }

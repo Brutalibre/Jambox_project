@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity;
+
 public class MainScreenActivity extends Activity {
 
 	Button btnViewUsers;
@@ -110,8 +112,10 @@ public class MainScreenActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                // Launching "create user" activity
-                Intent i = new Intent(getApplicationContext(), JamActivity.class);
+                // Launching "choose jammers" activity
+//                Intent i = new Intent(getApplicationContext(), ChooseJammersActivity.class);
+                // Launching Arduino Terminal activity
+                Intent i = new Intent(getApplicationContext(), ArduinoTerminalActivity.class);
                 startActivity(i);
             }
         });

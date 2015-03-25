@@ -14,9 +14,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/button"
+        android:label="Database connect"
         android:theme="@style/AppTheme" >
+
+        <!-- Login Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.LoginActivity"
             android:label="Login" >
@@ -63,10 +65,17 @@
             android:label="Jam&apos;Box - Add Friend" >
         </activity>
 
-        <!-- Jam Activity -->
+        <!-- Previous jam Activity -->
+        <!-- <activity -->
+        <!-- android:name=".ChooseJammersActivity" -->
+        <!-- android:label="Jam'Box - Add Friend" > -->
+        <!-- </activity> -->
+
+
+        <!-- JAM Activity -->
         <activity
-            android:name="com.val.databaseconnect_v2.JamActivity"
-            android:label="Jam&apos;Box - Add Friend" >
+            android:name="com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity"
+            android:label="Jam&apos;Box - Connection to Arduino" >
         </activity>
     </application>
 
