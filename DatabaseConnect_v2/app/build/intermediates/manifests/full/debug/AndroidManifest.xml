@@ -74,7 +74,8 @@
         <!-- android:label="ARDUINO BITCH" > -->
         <!-- </activity> -->
 
-         JAM Activity
+
+        <!-- JAM Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.JamActivity"
             android:label="New Jam !" >

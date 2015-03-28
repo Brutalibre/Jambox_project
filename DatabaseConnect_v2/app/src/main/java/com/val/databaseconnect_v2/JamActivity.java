@@ -103,7 +103,7 @@ public class JamActivity extends Activity {
 
 
                     // LocalHost : passer en réseau local
-                    addr = InetAddress.getByName("192.168.173.1");
+                    addr = InetAddress.getByName("192.168.43.82");
                     try(DatagramSocket socket = new DatagramSocket()) {
                         while (true) {
 		                   /* for(byte b : data) System.out.print(b + " ");
