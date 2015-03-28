@@ -14,14 +14,14 @@
 
     <application
         android:allowBackup="true"
-        android:label="Database connect"
-        android:icon="@drawable/button"
+        android:label="Jam'Box"
+        android:icon="@drawable/icon"
         android:theme="@style/AppTheme" >
 
         <!-- Login Activity -->
         <activity
             android:name=".LoginActivity"
-            android:label="Login" >
+            android:label="Jam'Box" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

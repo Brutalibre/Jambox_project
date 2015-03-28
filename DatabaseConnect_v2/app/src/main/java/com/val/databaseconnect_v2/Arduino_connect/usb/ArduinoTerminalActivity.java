@@ -19,52 +19,52 @@ package com.val.databaseconnect_v2.Arduino_connect.usb;
 import android.os.Bundle;
 
 import com.val.databaseconnect_v2.Arduino_connect.usb.interfaces.Viewable;
-import com.val.databaseconnect_v2.Arduino_connect.usb.interfaces.Viewable;
 
 /**
  * The actual Activity that does it all
  */
 public class ArduinoTerminalActivity extends UsbActivity {
-	private static final String TAG = "ArduinoTerminalActivity";
+    private static final String TAG = "ArduinoTerminalActivity";
 
-	
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
-    
+
     protected void createAndSetViews() {
         currentViewable_ = new TerminalViewable();
         currentViewable_.setActivity(this);
         signalToUi(Viewable.DISABLE_CONTROLS_TYPE, null);
     }
-    
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-	}
 
-	@Override
-	public void onResume() {
-		super.onResume();
-	}
-	
- 	@Override
-	public void onPause() {
-		super.onPause();
-	}
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
 
- 	
- 	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		super.onWindowFocusChanged(hasFocus);
-		
-		// Do extra scroll down in case of keaboard popup
-		if (currentViewable_ instanceof TerminalViewable) {
-			((TerminalViewable) currentViewable_).scrollDown1();
-		}
-	}
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
 
- 	
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+
+        // Do extra scroll down in case of keaboard popup
+        if (currentViewable_ instanceof TerminalViewable) {
+            ((TerminalViewable) currentViewable_).scrollDown1();
+        }
+    }
+
+
 }
