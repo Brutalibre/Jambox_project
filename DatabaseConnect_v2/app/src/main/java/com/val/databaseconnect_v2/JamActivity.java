@@ -27,14 +27,14 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
+/*
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.TargetDataLine;
-
+*/
 
 /**
  * Created by Val on 19/02/2015.
@@ -43,39 +43,40 @@ public class JamActivity extends Activity {
 
     public byte[] buffer;
     private int port;
-    static AudioInputStream ais;
+    //static AudioInputStream ais;
 
     public void onCreate(View v) {
         new Thread(new Runnable(){
             public void run() {
-                TargetDataLine line;
+                //TargetDataLine line;
                 DatagramPacket dgp;
 
-                AudioFormat.Encoding encoding = AudioFormat.Encoding.PCM_SIGNED;
+                //AudioFormat.Encoding encoding = AudioFormat.Encoding.PCM_SIGNED;
                 float rate = 44100.0f;
                 int channels = 2;
                 int sampleSize = 16;
                 boolean bigEndian = true;
                 InetAddress addr;
 
-                AudioFormat format = new AudioFormat(encoding, rate, sampleSize, channels, (sampleSize / 8) * channels, rate, bigEndian);
+                //AudioFormat format = new AudioFormat(encoding, rate, sampleSize, channels, (sampleSize / 8) * channels, rate, bigEndian);
 
-                DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
-                if (!AudioSystem.isLineSupported(info)) {
+                // DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
+               /* if (!AudioSystem.isLineSupported(info)) {
                     System.out.println("Line matching " + info + " not supported.");
                     return;
-                }
+                }*/
 
                 try {
-                    line = (TargetDataLine) AudioSystem.getLine(info);
+                    // line = (TargetDataLine) AudioSystem.getLine(info);
 
                     //TOTALLY missed this.
-                    int buffsize = line.getBufferSize() / 5;
+                    //int buffsize = line.getBufferSize() / 5;
+                    int buffsize = 0;
                     buffsize += 512;
 
-                    line.open(format);
+                    // line.open(format);
 
-                    line.start();
+                    //line.start();
 
                     int numBytesRead;
                     byte[] data = new byte[buffsize];
@@ -140,8 +141,8 @@ public class JamActivity extends Activity {
                         }
                     }
 
-                } catch (LineUnavailableException e) {
-                    e.printStackTrace();
+             /*  } catch (LineUnavailableException e) {
+                    e.printStackTrace();*/
                 } catch (UnknownHostException e) {
                     // TODO: handle exception
                 } catch (SocketException e) {

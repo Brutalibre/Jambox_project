@@ -76,7 +76,11 @@
             <!--android:label="ARDUINO BITCH" >-->
         <!--</activity>-->
 
+<<<<<<< HEAD
          JAM Activity
+=======
+         <!--JAM Activity -->
+>>>>>>> origin/master
         <activity
             android:name=".JamActivity"
             android:label="New Jam !" >
