@@ -1,4 +1,4 @@
-C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\classes\debug
-C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ea0bf9e763895717683157ff6208a9f2ebcfc799.jar
-C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-4952db72705a055433c4a3064e22e7fd4d80ffc5.jar
-C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\classes-00c39dad91c35b48a11ddad12fafc77504f47615.jar
+C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\classes\debug
+C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-21a5e08cb86b2edae962aaa61d9a5e0a8452e54c.jar
+C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-607666d8b993971fc52b9b4928665873c7fed14b.jar
+C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\classes-5d08af1210cb876f12d29dc15e71826358301bdb.jar

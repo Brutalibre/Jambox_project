@@ -104,6 +104,7 @@ public class JamActivity extends Activity {
 
                     // LocalHost : passer en réseau local
                     addr = InetAddress.getByName("192.168.43.82");
+                    Log.d("Envoi", "Avant envoi serveur");
                     try(DatagramSocket socket = new DatagramSocket()) {
                         while (true) {
 		                   /* for(byte b : data) System.out.print(b + " ");
@@ -127,7 +128,7 @@ public class JamActivity extends Activity {
                                 buffer.putShort((short)(Math.sin(Math.random()*4 * (λ/i)) * Short.MAX_VALUE));
                             }
                             //}
-                            System.out.println("Test");
+                            Log.d("Envoi", "Envoi OK");
                             data = buffer.array();
                             dgp = new DatagramPacket(data, data.length, addr, 57683);
 /*
@@ -144,10 +145,13 @@ public class JamActivity extends Activity {
              /*  } catch (LineUnavailableException e) {
                     e.printStackTrace();*/
                 } catch (UnknownHostException e) {
+                    Log.d("Host", "Unknown Host");
                     // TODO: handle exception
                 } catch (SocketException e) {
+                    Log.d("Socket", "Socket error");
                     // TODO: handle exception
                 } catch (IOException e2) {
+                    Log.d("IO Exception", "Io Exception");
                     // TODO: handle exception
                 }
 
