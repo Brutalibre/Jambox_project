@@ -89,7 +89,7 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="addFriend">Add a user as a friend</string>
-    <string name="app_name">Jam\'Box</string>
+    <string name="app_name">JamBox</string>
     <string name="cancel_string">Cancel</string>
     <string name="connect_dialog_title">Connect to USB</string>
     <string name="connect_fail_message">Fail to connect to </string>

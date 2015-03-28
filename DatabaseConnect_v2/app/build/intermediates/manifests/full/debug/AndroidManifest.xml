@@ -15,13 +15,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
-        android:label="Database connect"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
         <!-- Login Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.LoginActivity"
-            android:label="Jam&apos;Box" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,37 +32,37 @@
         <!-- Main Screen Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.MainScreenActivity"
-            android:label="Jam&apos;Box" >
+            android:label="JamBox" >
         </activity>
 
         <!-- All Users Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.AllUsersActivity"
-            android:label="Jam&apos;Box - All Users" >
+            android:label="JamBox - All Users" >
         </activity>
 
         <!-- All Friends Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.AllFriendsActivity"
-            android:label="Jam&apos;Box - All Friends" >
+            android:label="JamBox - All Friends" >
         </activity>
 
         <!-- Add User Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.NewUserActivity"
-            android:label="Jam&apos;Box - Add New User" >
+            android:label="JamBox - Add New User" >
         </activity>
 
         <!-- Display User Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.DisplayUserActivity"
-            android:label="Jam&apos;Box - Display User" >
+            android:label="JamBox - Display User" >
         </activity>
 
         <!-- Add Friend Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.AddFriendActivity"
-            android:label="Jam&apos;Box - Add Friend" >
+            android:label="JamBox - Add Friend" >
         </activity>
 
         <!-- Previous jam Activity -->
@@ -75,7 +75,7 @@
         <!-- JAM Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity"
-            android:label="Jam&apos;Box - Connection to Arduino" >
+            android:label="JamBox - Connection to Arduino" >
         </activity>
     </application>
 
