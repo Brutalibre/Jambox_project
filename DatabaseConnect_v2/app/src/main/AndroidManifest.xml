@@ -76,11 +76,11 @@
             <!--android:label="ARDUINO BITCH" >-->
         <!--</activity>-->
 
-        <!-- JAM Activity -->
-        <!--<activity-->
-            <!--android:name=".JamActivity"-->
-            <!--android:label="New Jam !" >-->
-        <!--</activity>-->
+         JAM Activity
+        <activity
+            android:name=".JamActivity"
+            android:label="New Jam !" >
+        </activity>
 
 
 

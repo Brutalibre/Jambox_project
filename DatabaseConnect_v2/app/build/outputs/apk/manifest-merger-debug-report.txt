@@ -103,6 +103,12 @@ ADDED from AndroidManifest.xml:66:9
 		ADDED from AndroidManifest.xml:68:13
 	android:name
 		ADDED from AndroidManifest.xml:67:13
+activity#com.val.databaseconnect_v2.JamActivity
+ADDED from AndroidManifest.xml:80:9
+	android:label
+		ADDED from AndroidManifest.xml:82:13
+	android:name
+		ADDED from AndroidManifest.xml:81:13
 activity#com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity
 ADDED from AndroidManifest.xml:87:9
 	android:label
