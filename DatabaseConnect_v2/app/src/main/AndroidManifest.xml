@@ -11,12 +11,15 @@
     <!-- Internet Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@drawable/icon"
         android:theme="@style/AppTheme" >
+
+        <uses-library android:name="com.android.future.usb.accessory" />
 
         <!-- Login Activity -->
         <activity
@@ -65,17 +68,50 @@
             android:label="JamBox - Add Friend" >
         </activity>
 
-        <!-- Previous jam Activity -->
+
+
+         <!--Previous jam Activity-->
         <!--<activity-->
-            <!--android:name=".ChooseJammersActivity"-->
-            <!--android:label="Jam'Box - Add Friend" >-->
+            <!--android:name=".Arduino_connect.usb.ArduinoTerminalActivity"-->
+            <!--android:label="ARDUINO BITCH" >-->
         <!--</activity>-->
 
         <!-- JAM Activity -->
-        <activity
-            android:name=".Arduino_connect.usb.ArduinoTerminalActivity"
-            android:label="JamBox - Connection to Arduino" >
+        <!--<activity-->
+            <!--android:name=".JamActivity"-->
+            <!--android:label="New Jam !" >-->
+        <!--</activity>-->
+
+
+
+        <activity android:name=".Arduino_connect.usb.ArduinoTerminalActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme" />
+
+        <activity android:name=".Arduino_connect.usb.Preferences" />
+
+        <activity android:name=".Arduino_connect.usb.StartServiceActivity"
+            android:label="@string/starter_app_name"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
         </activity>
+
+
+
+        <service android:name=".Arduino_connect.usb.ArduinoUsbService"/>
+        <!-- <service android:name=".ArduinoUsbService" android:process=":remote" /> -->
+
+        <uses-library android:name="com.android.future.usb.accessory" />
     </application>
 
 </manifest>

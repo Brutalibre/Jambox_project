@@ -116,6 +116,7 @@ public class MainScreenActivity extends Activity {
 //                Intent i = new Intent(getApplicationContext(), ChooseJammersActivity.class);
                 // Launching Arduino Terminal activity
                 Intent i = new Intent(getApplicationContext(), ArduinoTerminalActivity.class);
+                //Intent i = new Intent(getApplicationContext(), JamActivity.class);
                 startActivity(i);
             }
         });
