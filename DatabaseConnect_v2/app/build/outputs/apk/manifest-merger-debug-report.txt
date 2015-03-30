@@ -64,51 +64,63 @@ ADDED from AndroidManifest.xml:29:17
 	android:name
 		ADDED from AndroidManifest.xml:29:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:31:17
+ADDED from AndroidManifest.xml:30:17
 	android:name
-		ADDED from AndroidManifest.xml:31:27
+		ADDED from AndroidManifest.xml:30:27
+intent-filter#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from AndroidManifest.xml:33:13
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from AndroidManifest.xml:34:17
+	android:name
+		ADDED from AndroidManifest.xml:34:25
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from AndroidManifest.xml:37:13
+	android:resource
+		ADDED from AndroidManifest.xml:38:17
+	android:name
+		ADDED from AndroidManifest.xml:37:24
 activity#com.val.databaseconnect_v2.MainScreenActivity
-ADDED from AndroidManifest.xml:36:9
+ADDED from AndroidManifest.xml:43:9
 	android:label
-		ADDED from AndroidManifest.xml:38:13
+		ADDED from AndroidManifest.xml:45:13
 	android:name
-		ADDED from AndroidManifest.xml:37:13
-activity#com.val.databaseconnect_v2.AllUsersActivity
-ADDED from AndroidManifest.xml:42:9
-	android:label
 		ADDED from AndroidManifest.xml:44:13
-	android:name
-		ADDED from AndroidManifest.xml:43:13
-activity#com.val.databaseconnect_v2.AllFriendsActivity
+activity#com.val.databaseconnect_v2.AllUsersActivity
 ADDED from AndroidManifest.xml:48:9
 	android:label
 		ADDED from AndroidManifest.xml:50:13
 	android:name
 		ADDED from AndroidManifest.xml:49:13
-activity#com.val.databaseconnect_v2.NewUserActivity
-ADDED from AndroidManifest.xml:54:9
+activity#com.val.databaseconnect_v2.AllFriendsActivity
+ADDED from AndroidManifest.xml:53:9
 	android:label
-		ADDED from AndroidManifest.xml:56:13
-	android:name
 		ADDED from AndroidManifest.xml:55:13
+	android:name
+		ADDED from AndroidManifest.xml:54:13
+activity#com.val.databaseconnect_v2.NewUserActivity
+ADDED from AndroidManifest.xml:58:9
+	android:label
+		ADDED from AndroidManifest.xml:60:13
+	android:name
+		ADDED from AndroidManifest.xml:59:13
 activity#com.val.databaseconnect_v2.DisplayUserActivity
-ADDED from AndroidManifest.xml:60:9
+ADDED from AndroidManifest.xml:63:9
 	android:label
-		ADDED from AndroidManifest.xml:62:13
+		ADDED from AndroidManifest.xml:65:13
 	android:name
-		ADDED from AndroidManifest.xml:61:13
+		ADDED from AndroidManifest.xml:64:13
 activity#com.val.databaseconnect_v2.AddFriendActivity
-ADDED from AndroidManifest.xml:66:9
+ADDED from AndroidManifest.xml:68:9
 	android:label
-		ADDED from AndroidManifest.xml:68:13
+		ADDED from AndroidManifest.xml:70:13
 	android:name
-		ADDED from AndroidManifest.xml:67:13
+		ADDED from AndroidManifest.xml:69:13
 activity#com.val.databaseconnect_v2.JamActivity
-ADDED from AndroidManifest.xml:80:9
+ADDED from AndroidManifest.xml:81:9
 	android:label
-		ADDED from AndroidManifest.xml:82:13
+		ADDED from AndroidManifest.xml:83:13
 	android:name
-		ADDED from AndroidManifest.xml:81:13
+		ADDED from AndroidManifest.xml:82:13
 activity#com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity
 ADDED from AndroidManifest.xml:87:9
 	android:label
@@ -137,19 +149,7 @@ ADDED from AndroidManifest.xml:96:9
 		ADDED from AndroidManifest.xml:98:13
 	android:name
 		ADDED from AndroidManifest.xml:96:19
-intent-filter#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from AndroidManifest.xml:101:13
-action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from AndroidManifest.xml:102:17
-	android:name
-		ADDED from AndroidManifest.xml:102:25
-meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from AndroidManifest.xml:105:13
-	android:resource
-		ADDED from AndroidManifest.xml:106:17
-	android:name
-		ADDED from AndroidManifest.xml:105:24
 service#com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoUsbService
-ADDED from AndroidManifest.xml:111:9
+ADDED from AndroidManifest.xml:103:9
 	android:name
-		ADDED from AndroidManifest.xml:111:18
+		ADDED from AndroidManifest.xml:103:18

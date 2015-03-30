@@ -30,43 +30,44 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
         </activity>
 
         <!-- Main Screen Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.MainScreenActivity"
-            android:label="JamBox" >
-        </activity>
+            android:label="JamBox" />
 
         <!-- All Users Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.AllUsersActivity"
-            android:label="JamBox - All Users" >
-        </activity>
+            android:label="JamBox - All Users" />
 
         <!-- All Friends Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.AllFriendsActivity"
-            android:label="JamBox - All Friends" >
-        </activity>
+            android:label="JamBox - All Friends" />
 
         <!-- Add User Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.NewUserActivity"
-            android:label="JamBox - Add New User" >
-        </activity>
+            android:label="JamBox - Add New User" />
 
         <!-- Display User Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.DisplayUserActivity"
-            android:label="JamBox - Display User" >
-        </activity>
+            android:label="JamBox - Display User" />
 
         <!-- Add Friend Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.AddFriendActivity"
-            android:label="JamBox - Add Friend" >
-        </activity>
+            android:label="JamBox - Add Friend" />
 
         <!-- Previous jam Activity -->
         <!-- <activity -->
@@ -78,8 +79,7 @@
         <!-- JAM Activity -->
         <activity
             android:name="com.val.databaseconnect_v2.JamActivity"
-            android:label="New Jam !" >
-        </activity>
+            android:label="New Jam !" />
         <activity
             android:name="com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity"
             android:configChanges="orientation"
@@ -92,15 +92,7 @@
             android:name="com.val.databaseconnect_v2.Arduino_connect.usb.StartServiceActivity"
             android:excludeFromRecents="true"
             android:label="@string/starter_app_name"
-            android:launchMode="singleInstance" >
-            <intent-filter>
-                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
-                android:resource="@xml/accessory_filter" />
-        </activity>
+            android:launchMode="singleInstance" />
 
         <service android:name="com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoUsbService" />
         <!-- <service android:name=".ArduinoUsbService" android:process=":remote" /> -->

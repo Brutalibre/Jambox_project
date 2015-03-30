@@ -20,6 +20,12 @@
         android:text="@string/jam"
         style="@style/JamButton"/>
 
+    <!--  Button to JAM ! -->
+    <Button android:id="@+id/btnJam2"
+        android:background="@drawable/jam_button"
+        android:text="@string/starter_app_name"
+        style="@style/JamButton"/>
+
     <!--  Button to view all users screen -->
     <Button android:id="@+id/btnViewUsers"
         android:background="@drawable/button"

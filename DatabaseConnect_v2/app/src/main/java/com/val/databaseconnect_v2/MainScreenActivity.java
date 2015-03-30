@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity;
+import com.val.databaseconnect_v2.Arduino_connect.usb.StartServiceActivity;
 
 public class MainScreenActivity extends Activity {
 
@@ -19,6 +20,7 @@ public class MainScreenActivity extends Activity {
 	Button btnAddFriend;
 	Button btnLogout;
     Button btnJam;
+    Button btnJam2;
 	
 	TextView userData;
 	
@@ -37,6 +39,7 @@ public class MainScreenActivity extends Activity {
 		btnAddFriend = (Button) findViewById(R.id.btnAddFriend);
 		btnLogout = (Button) findViewById(R.id.btnLogout);
         btnJam = (Button) findViewById(R.id.btnJam);
+        btnJam2 = (Button) findViewById(R.id.btnJam2);
 		
 		userData = (TextView) findViewById(R.id.userData);
 		
@@ -107,7 +110,7 @@ public class MainScreenActivity extends Activity {
         });
 
 
-        // Jam click event
+        // Jam click event -> SERVER
         btnJam.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -117,6 +120,20 @@ public class MainScreenActivity extends Activity {
                 // Launching Arduino Terminal activity
 //                Intent i = new Intent(getApplicationContext(), ArduinoTerminalActivity.class);
                 Intent i = new Intent(getApplicationContext(), JamActivity.class);
+                startActivity(i);
+            }
+        });
+
+        // Jam2 click event -> ARDUINO
+        btnJam2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // Launching "choose jammers" activity
+//                Intent i = new Intent(getApplicationContext(), ChooseJammersActivity.class);
+                // Launching Arduino Terminal activity
+                Intent i = new Intent(getApplicationContext(), StartServiceActivity.class);
+//                Intent i = new Intent(getApplicationContext(), JamActivity.class);
                 startActivity(i);
             }
         });

@@ -24,49 +24,50 @@
         <!-- Login Activity -->
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+
         </activity>
         
         <!-- Main Screen Activity -->
         <activity
             android:name=".MainScreenActivity"
-            android:label="JamBox" >
-        </activity>
+            android:label="JamBox" />
 
         <!-- All Users Activity -->
         <activity
             android:name=".AllUsersActivity"
-            android:label="JamBox - All Users" >
-        </activity>
+            android:label="JamBox - All Users" />
 
          <!-- All Friends Activity -->
         <activity
             android:name=".AllFriendsActivity"
-            android:label="JamBox - All Friends" >
-        </activity>
+            android:label="JamBox - All Friends" />
         
         <!-- Add User Activity -->
         <activity
             android:name=".NewUserActivity"
-            android:label="JamBox - Add New User" >
-        </activity>
+            android:label="JamBox - Add New User" />
 
         <!--  Display User Activity -->
         <activity
             android:name=".DisplayUserActivity"
-            android:label="JamBox - Display User" >
-        </activity>
+            android:label="JamBox - Display User" />
         
         <!-- Add Friend Activity -->
         <activity
             android:name=".AddFriendActivity"
-            android:label="JamBox - Add Friend" >
-        </activity>
+            android:label="JamBox - Add Friend" />
 
 
 
@@ -79,8 +80,7 @@
          <!--JAM Activity -->
         <activity
             android:name=".JamActivity"
-            android:label="New Jam !" >
-        </activity>
+            android:label="New Jam !" />
 
 
 
@@ -96,15 +96,7 @@
         <activity android:name=".Arduino_connect.usb.StartServiceActivity"
             android:label="@string/starter_app_name"
             android:launchMode="singleInstance"
-            android:excludeFromRecents="true">
-
-            <intent-filter>
-                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
-            </intent-filter>
-
-            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
-                android:resource="@xml/accessory_filter" />
-        </activity>
+            android:excludeFromRecents="true"/>
 
 
 

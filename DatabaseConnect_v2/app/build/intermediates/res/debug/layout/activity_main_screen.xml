@@ -20,6 +20,12 @@
         android:text="@string/jam"
         style="@style/JamButton"/>
 
+    <!--  Button to JAM ! -->
+    <Button android:id="@+id/btnJam2"
+        android:background="@drawable/jam_button"
+        android:text="@string/starter_app_name"
+        style="@style/JamButton"/>
+
     <!--  Button to view all users screen -->
     <Button android:id="@+id/btnViewUsers"
         android:background="@drawable/button"
@@ -51,4 +57,4 @@
         style="@style/Button"/>
  
 </LinearLayout>
-<!-- From: file:/C:/Users/Victor/Documents/GitHub/Jambox_project/DatabaseConnect_v2/app/src/main/res/layout/activity_main_screen.xml -->
+<!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/layout/activity_main_screen.xml -->

@@ -28,6 +28,7 @@ import android.hardware.usb.UsbAccessory;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class StartServiceActivity extends Activity {
     /** Called when the activity is first created. */
@@ -56,8 +57,8 @@ public class StartServiceActivity extends Activity {
                             UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
                         startService(startServiceIntent);
                     } else {
-                        Log.d(TAG, "permission denied for accessory "
-                                + accessory);
+                        Toast.makeText(getApplicationContext(), "permission denied for accessory "
+                                + accessory, Toast.LENGTH_LONG).show();
                     }
                     mPermissionRequestPending = false;
                 }
@@ -72,7 +73,7 @@ public class StartServiceActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.d(TAG, "onCreate entered");
+        Toast.makeText(getApplicationContext(), "onCreate entered", Toast.LENGTH_LONG).show();
         //mUsbManager = UsbManager.getInstance(this);
         mUsbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
         startServiceIntent = new Intent(this, com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoUsbService.class);
@@ -102,10 +103,10 @@ public class StartServiceActivity extends Activity {
                 }
             }
         } else {
-            Log.d(TAG, "mAccessory is null");
+            Toast.makeText(getApplicationContext(), "mAccessory is null", Toast.LENGTH_LONG).show();
         }
 
-        Log.d(TAG, "onCreate exited");
+        Toast.makeText(getApplicationContext(), "onCreate exited", Toast.LENGTH_LONG).show();
 
     }
 

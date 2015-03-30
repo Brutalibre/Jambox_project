@@ -5,4 +5,4 @@
     <item android:id="@+id/mainMenuExit" android:title="@string/main_menu_exit_name" android:icon="@drawable/exit"/>
     
 </menu>
-<!-- From: file:/C:/Users/Victor/Documents/GitHub/Jambox_project/DatabaseConnect_v2/app/src/main/res/menu/main_menu.xml -->
+<!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/menu/main_menu.xml -->

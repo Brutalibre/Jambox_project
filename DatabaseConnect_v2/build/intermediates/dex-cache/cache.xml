@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-607666d8b993971fc52b9b4928665873c7fed14b.jar" />
+        <dex dex="C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-4952db72705a055433c4a3064e22e7fd4d80ffc5.jar" />
     </item>
     <item
-        jar="C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\classes-5d08af1210cb876f12d29dc15e71826358301bdb.jar" />
+        <dex dex="C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\classes-00c39dad91c35b48a11ddad12fafc77504f47615.jar" />
     </item>
     <item
-        jar="C:\Users\Victor\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="C:\Users\Val\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Victor\Documents\GitHub\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-21a5e08cb86b2edae962aaa61d9a5e0a8452e54c.jar" />
+        <dex dex="C:\Users\Val\AndroidstudioProjects\Jambox_project\DatabaseConnect_v2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ea0bf9e763895717683157ff6208a9f2ebcfc799.jar" />
     </item>
 
 </items>
