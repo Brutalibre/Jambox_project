@@ -46,7 +46,7 @@ public class JamActivity extends Activity {
     //static AudioInputStream ais;
 
     public void onCreate(View v) {
-        new Thread(new Runnable(){
+        Thread thread = new Thread(new Runnable(){
             public void run() {
                 //TargetDataLine line;
                 DatagramPacket dgp;
@@ -103,7 +103,7 @@ public class JamActivity extends Activity {
 
 
                     // LocalHost : passer en réseau local
-                    addr = InetAddress.getByName("192.168.43.82");
+                    addr = InetAddress.getByName("10.4.183.136");
                     Log.d("Envoi", "Avant envoi serveur");
                     try(DatagramSocket socket = new DatagramSocket()) {
                         while (true) {
@@ -130,7 +130,7 @@ public class JamActivity extends Activity {
                             //}
                             Log.d("Envoi", "Envoi OK");
                             data = buffer.array();
-                            dgp = new DatagramPacket(data, data.length, addr, 57683);
+                            dgp = new DatagramPacket(data, data.length, addr, 50005);
 /*
 		                    for(int i = 0; i < 64; i++) {
 		                        byte b = dgp.getData()[i];
@@ -158,6 +158,8 @@ public class JamActivity extends Activity {
 
             }
         });
+
+        thread.start();
 
     }
 }

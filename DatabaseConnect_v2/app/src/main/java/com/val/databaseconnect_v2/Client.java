@@ -18,7 +18,7 @@
 //import javax.sound.sampled.TargetDataLine;
 //
 //
-//public class Client {
+////public class Client {
 //
 //	public byte[] buffer;
 //    private int port;
