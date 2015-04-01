@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:layout_gravity="center_horizontal">
+    android:gravity="center">
  
     <!-- Input Username -->
     <EditText android:id="@+id/inputUsername"
@@ -13,7 +13,8 @@
         android:layout_marginBottom="15dip"
         android:singleLine="true"
         android:hint="@string/username"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:gravity="center"/>
  
     <!-- Input password -->
     <EditText android:id="@+id/inputPwd"
@@ -22,7 +23,7 @@
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
         android:lines="4"
-        android:gravity="top"
+        android:gravity="center"
         android:hint="@string/password"
         android:inputType="textPassword" />
  
@@ -31,13 +32,15 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:layout_marginTop="25dip"/>
+        android:layout_marginTop="25dip"
+        style="@style/BigButton"/>
  
     <!--  Button to create a new user screen -->
     <Button android:id="@+id/btnCreateUser"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/createUser"
-        android:layout_marginTop="25dip"/>
+        android:layout_marginTop="25dip"
+        style="@style/Button"/>
  
 </LinearLayout>

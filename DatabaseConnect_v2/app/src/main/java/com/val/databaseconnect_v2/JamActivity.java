@@ -74,7 +74,7 @@ public class JamActivity extends Activity {
                 }*/
 
                 try {
-                    addr = InetAddress.getByName("10.4.183.136");
+                    addr = InetAddress.getByName("192.168.43.82");
                     // line = (TargetDataLine) AudioSystem.getLine(info);
 
                     //TOTALLY missed this.

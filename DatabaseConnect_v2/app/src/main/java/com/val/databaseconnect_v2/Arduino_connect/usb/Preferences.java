@@ -115,13 +115,6 @@ public class Preferences extends PreferenceActivity implements OnSharedPreferenc
     private String getSummaryForKey(String key) {
         String summary = null;
 
-        if (          getString(R.string.pref_close_on_detach_key).equals(key)) {
-            summary = getString(R.string.pref_close_on_detach_summary);
-
-        } else if (   getString(R.string.pref_show_keyboard_key).equals(key)) {
-            summary = getString(R.string.pref_show_keyboard_summary);
-
-        }
 
         return summary;
     }

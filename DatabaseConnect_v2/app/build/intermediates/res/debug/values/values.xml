@@ -91,15 +91,22 @@
     <string name="action_settings">Settings</string>
     <string name="addFriend">Add a user as a friend</string>
     <string name="app_name">JamBox</string>
+    <string name="connected_to_usb_device_message">Connected to USB device</string>
     <string name="createUser">Create new user</string>
+    <string name="disconnected_from_usb_device_message">Disconnected from USB device</string>
     <string name="email">Email address</string>
     <string name="hello_world">Hello world!</string>
     <string name="jam">JAM !</string>
     <string name="login">Login</string>
     <string name="logout">Log out</string>
+    <string name="no_permissions_for_this_usb_device_message">No permissions to connect to USB device</string>
+    <string name="no_usb_devices_attached_message">No USB devices are currently attached</string>
     <string name="password">Password</string>
+    <string name="quit">Quit Jam</string>
     <string name="starter_app_name">Start Arduino Service</string>
     <string name="title_activity_display_user">DisplayUserActivity</string>
+    <string name="usb_device_attached">USB device attached</string>
+    <string name="usb_device_detached">USB device detached</string>
     <string name="username">Username</string>
     <string name="usernameOrEmail">Enter your search by username or email address (or both) :</string>
     <string name="viewFriends">View all of your friends</string>
@@ -116,32 +123,48 @@
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:background">#222222</item>
+        <item name="android:textColor">#DDDDDD</item>
+        <item name="android:textColorLink">#FFFFFF</item>
+        <item name="android:textColorHint">#DDDDDD</item>
+        <item name="android:editTextColor">#DDDDDD</item>
+    </style>
+    <style name="BigButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/jam_button</item>
     </style>
     <style name="Button">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#176476</item>
+        <item name="android:textColor">#000000</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_margin">5dp</item>
         <item name="android:textSize">20sp</item>
         <item name="android:padding">5dp</item>
         <item name="android:shadowColor">#000000</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
-        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:background">@drawable/jam_button</item>
     </style>
-    <style name="JamButton">
-        <item name="android:layout_width">wrap_content</item>
+    <style name="RedButton">
+        <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:textSize">30sp</item>
-        <item name="android:padding">10dp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">5dp</item>
         <item name="android:shadowColor">#000000</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
-        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:background">@drawable/red_button</item>
     </style>
 </resources>

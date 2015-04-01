@@ -51,7 +51,7 @@
         android:layout_marginBottom="15dip"
         android:singleLine="true"
         android:hint="@string/email"
-        android:inputType="text"/>
+        android:inputType="textEmailAddress"/>
  
     
  
@@ -59,6 +59,7 @@
     <Button android:id="@+id/btnCreateUser"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/addFriend"/>
+        android:text="@string/addFriend"
+        style="@style/Button"/>
  
 </LinearLayout><!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/layout/add_friend.xml -->
