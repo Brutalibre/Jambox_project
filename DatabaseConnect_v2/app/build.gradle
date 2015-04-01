@@ -19,6 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.3'
+    compile "com.android.support:support-v4:21.0.3"
+    compile "com.androidplot:androidplot-core:0.6.1"
     //compile files('libs/rt.jar')
 }

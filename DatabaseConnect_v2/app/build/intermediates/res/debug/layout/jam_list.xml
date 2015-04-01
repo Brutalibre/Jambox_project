@@ -24,8 +24,8 @@
             />
         </LinearLayout>
 
-    <com.androidplot.xy.XYPlot
-        android:id="@+id/simplePlot"
-    />
-
+    <TabHost
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
+<!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/layout/jam_list.xml -->

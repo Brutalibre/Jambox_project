@@ -18,7 +18,7 @@
     <string name="usernameOrEmail">Enter your search by username or email address (or both) :</string>
     <string name="title_activity_display_user">DisplayUserActivity</string>
 
-    <!--<string name="starter_app_name">Start Arduino Service</string>-->
+    <string name="starter_app_name">Start Arduino Service</string>
     <!--<string name="main_menu_connect_name">Connect</string>-->
     <!--<string name="main_menu_reconnect_name">Reconnect</string>-->
     <!--<string name="main_menu_settings_name">Settings</string>-->
