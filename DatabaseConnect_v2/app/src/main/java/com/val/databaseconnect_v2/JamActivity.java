@@ -11,6 +11,7 @@ import android.widget.AbsListView;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -145,13 +146,13 @@ public class JamActivity extends Activity {
              /*  } catch (LineUnavailableException e) {
                     e.printStackTrace();*/
                 } catch (UnknownHostException e) {
-                    Log.d("Host", "Unknown Host");
+                    Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
                     // TODO: handle exception
                 } catch (SocketException e) {
-                    Log.d("Socket", "Socket error");
+                    Toast.makeText(getApplicationContext(), "Socket error", Toast.LENGTH_LONG).show();
                     // TODO: handle exception
                 } catch (IOException e2) {
-                    Log.d("IO Exception", "Io Exception");
+                    Toast.makeText(getApplicationContext(), "Input / Output error", Toast.LENGTH_LONG).show();
                     // TODO: handle exception
                 }
 

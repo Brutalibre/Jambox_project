@@ -118,29 +118,8 @@ public class Preferences extends PreferenceActivity implements OnSharedPreferenc
         if (          getString(R.string.pref_close_on_detach_key).equals(key)) {
             summary = getString(R.string.pref_close_on_detach_summary);
 
-        } else if (   getString(R.string.pref_display_orientation_key).equals(key)) {
-            summary = getString(R.string.pref_display_orientation_summary);
-
-        } else if (   getString(R.string.pref_keyboard_type_key).equals(key)) {
-            summary = getString(R.string.pref_keyboard_type_summary);
-
         } else if (   getString(R.string.pref_show_keyboard_key).equals(key)) {
             summary = getString(R.string.pref_show_keyboard_summary);
-
-        } else if    (getString(R.string.pref_local_echo_key).equals(key)) {
-            summary = getString(R.string.pref_local_echo_summary);
-
-        } else if (   getString(R.string.pref_clear_action_key).equals(key)) {
-            summary = getString(R.string.pref_clear_action_summary);
-
-        } else if (   getString(R.string.pref_display_colors_key).equals(key)) {
-            summary = getString(R.string.pref_display_colors_summary);
-
-        } else if (   getString(R.string.pref_font_size_key).equals(key)) {
-            summary = getString(R.string.pref_font_size_summary);
-
-        } else if (   getString(R.string.pref_font_typeface_key).equals(key)) {
-            summary = getString(R.string.pref_font_typeface_summary);
 
         }
 

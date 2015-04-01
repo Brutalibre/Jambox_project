@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:layout_gravity="center_horizontal">"
+    android:layout_gravity="center_horizontal">
  
     <!-- Input Username -->
     <EditText android:id="@+id/inputUsername"
