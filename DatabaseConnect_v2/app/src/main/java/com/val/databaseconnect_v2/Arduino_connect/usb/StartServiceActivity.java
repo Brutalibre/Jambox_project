@@ -27,7 +27,6 @@ import android.content.IntentFilter;
 import android.hardware.usb.UsbAccessory;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
 public class StartServiceActivity extends Activity {
@@ -73,7 +72,8 @@ public class StartServiceActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Toast.makeText(getApplicationContext(), "onCreate entered", Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(), "onCreate entered", Toast.LENGTH_LONG).show();
+
         //mUsbManager = UsbManager.getInstance(this);
         mUsbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
         startServiceIntent = new Intent(this, com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoUsbService.class);
@@ -103,10 +103,10 @@ public class StartServiceActivity extends Activity {
                 }
             }
         } else {
-            Toast.makeText(getApplicationContext(), "mAccessory is null", Toast.LENGTH_LONG).show();
+//            Toast.makeText(getApplicationContext(), "mAccessory is null", Toast.LENGTH_LONG).show();
         }
 
-        Toast.makeText(getApplicationContext(), "onCreate exited", Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(), "onCreate exited", Toast.LENGTH_LONG).show();
 
     }
 

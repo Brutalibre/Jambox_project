@@ -19,6 +19,7 @@ package com.val.databaseconnect_v2.Arduino_connect.usb;
 import android.os.Bundle;
 
 import com.val.databaseconnect_v2.Arduino_connect.usb.interfaces.Viewable;
+import com.val.databaseconnect_v2.R;
 
 /**
  * The actual Activity that does it all
@@ -35,8 +36,10 @@ public class ArduinoTerminalActivity extends UsbActivity {
     }
 
     protected void createAndSetViews() {
-        currentViewable_ = new TerminalViewable();
-        currentViewable_.setActivity(this);
+//        currentViewable_ = new TerminalViewable();
+//        currentViewable_.setActivity(this);
+        this.setContentView(R.layout.jam);
+
         signalToUi(Viewable.DISABLE_CONTROLS_TYPE, null);
     }
 
@@ -54,17 +57,5 @@ public class ArduinoTerminalActivity extends UsbActivity {
     public void onPause() {
         super.onPause();
     }
-
-
-    @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-
-        // Do extra scroll down in case of keaboard popup
-        if (currentViewable_ instanceof TerminalViewable) {
-            ((TerminalViewable) currentViewable_).scrollDown1();
-        }
-    }
-
 
 }

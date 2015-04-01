@@ -296,7 +296,7 @@ public abstract class UsbActivity extends Activity implements Connectable {
         super.onConfigurationChanged(newConfig);
 
         // Scroll down when orientation has been changed
-        signalToUi(Viewable.SHOW_LATEST_MESSAGES, new Integer(scrollDelay));
+        signalToUi(Viewable.SHOW_LATEST_MESSAGES, Integer.valueOf(scrollDelay));
 
         // Checks the orientation of the screen
  	    /*
@@ -308,38 +308,6 @@ public abstract class UsbActivity extends Activity implements Connectable {
  	    */
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        logMessage("onCreateOptionsMenu");
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        logMessage("onOptionsItemSelected");
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.mainMenuConnect:
-                onConnectMenu();
-                return true;
-            case R.id.mainMenuSettings:
-                startActivity(new Intent(this, Preferences.class));
-                return true;
-            case R.id.mainMenuExit:
-                try {
-                    logMessage("on Exit menu");
-                    close();
-                } catch (Exception e) {
-                    logMessage("Close menu fail: " +e.getMessage());
-                }
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
     public void onConnectMenu() {
         logMessage("On Connect Menu");
