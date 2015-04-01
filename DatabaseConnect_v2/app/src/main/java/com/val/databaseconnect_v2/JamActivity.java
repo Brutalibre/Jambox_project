@@ -42,32 +42,39 @@ import javax.sound.sampled.TargetDataLine;
  */
 public class JamActivity extends Activity {
 
+   /* public void onCreate(View v) {
+        try {
+            InetAddress addr = InetAddress.getByName("127.0.0.1");
+            ThreadClient threadClient = new ThreadClient(50005, addr);
+            threadClient.start();
+        }
+        catch(UnknownHostException e){
+            Log.d("Host not found", "Host not found");
+        }
+
+    }*/
     public byte[] buffer;
     private int port;
     //static AudioInputStream ais;
 
     public void onCreate(View v) {
-        Thread thread = new Thread(new Runnable(){
+        new Thread(new Runnable(){
             public void run() {
                 //TargetDataLine line;
                 DatagramPacket dgp;
-
-                //AudioFormat.Encoding encoding = AudioFormat.Encoding.PCM_SIGNED;
-                float rate = 44100.0f;
-                int channels = 2;
-                int sampleSize = 16;
-                boolean bigEndian = true;
+                port = 50005;
                 InetAddress addr;
 
                 //AudioFormat format = new AudioFormat(encoding, rate, sampleSize, channels, (sampleSize / 8) * channels, rate, bigEndian);
 
                 // DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
-               /* if (!AudioSystem.isLineSupported(info)) {
+                /*if (!AudioSystem.isLineSupported(info)) {
                     System.out.println("Line matching " + info + " not supported.");
                     return;
                 }*/
 
                 try {
+                    addr = InetAddress.getByName("10.4.183.136");
                     // line = (TargetDataLine) AudioSystem.getLine(info);
 
                     //TOTALLY missed this.
@@ -82,33 +89,16 @@ public class JamActivity extends Activity {
                     int numBytesRead;
                     byte[] data = new byte[buffsize];
 
-		            /*
-		             * MICK's injection: We have a buffsize of 512; it is best if the frequency
-		             * evenly fits into this (avoid skips, bumps, and pops). Additionally, 44100 Hz,
-		             * with two channels and two bytes per sample. That's four bytes; divide
-		             * 512 by it, you have 128.
-		             *
-		             * 128 samples, 44100 per second; that's a minimum of 344 samples, or 172 Hz.
-		             * Well within hearing range; slight skip from the uneven division. Maybe
-		             * bump it up to 689 Hz.
-		             *
-		             * That's a sine wave of shorts, repeated twice for two channels, with a
-		             * wavelength of 32 samples.
-		             *
-		             * Note: Changed my mind, ignore specific numbers above.
-		             *
-		             */
-
-                    final int λ = 16;
-                    ByteBuffer buffer = ByteBuffer.allocate(λ * 2 * 8);
+                    final int λ = 256;
+                    ByteBuffer buffer = ByteBuffer.allocate(λ * 8);
 
 
                     // LocalHost : passer en réseau local
-                    addr = InetAddress.getByName("10.4.183.136");
+
                     Log.d("Envoi", "Avant envoi serveur");
                     try(DatagramSocket socket = new DatagramSocket()) {
                         while (true) {
-		                   /* for(byte b : data) System.out.print(b + " ");
+		                    for(byte b : data) System.out.print(b + " ");
 
 		                    // Read the next chunk of data from the TargetDataLine.
 //		                  numBytesRead = line.read(data, 0, data.length);
@@ -118,7 +108,7 @@ public class JamActivity extends Activity {
 		                        System.out.print(b + " ");
 		                    }
 		                    System.out.println();
-*/
+
                             // Save this chunk of data.
                             //for(int j = 0; j < 2; j++) {
                             buffer.clear();
@@ -129,22 +119,25 @@ public class JamActivity extends Activity {
                                 buffer.putShort((short)(Math.sin(Math.random()*4 * (λ/i)) * Short.MAX_VALUE));
                             }
                             //}
-                            Log.d("Envoi", "Envoi OK");
+                            runOnUiThread(new Runnable() {
+
+                                public void run() {
+
+                                    Log.d("Envoi", "Envoi OK");
+
+                                }
+
+                            });
+
                             data = buffer.array();
-                            dgp = new DatagramPacket(data, data.length, addr, 50005);
-/*
-		                    for(int i = 0; i < 64; i++) {
-		                        byte b = dgp.getData()[i];
-		                        System.out.print(b + " ");
-		                    }
-		                    System.out.println();
-*/
+                            dgp = new DatagramPacket(data, data.length, addr, port);
+
+
                             socket.send(dgp);
                         }
                     }
 
-             /*  } catch (LineUnavailableException e) {
-                    e.printStackTrace();*/
+
                 } catch (UnknownHostException e) {
                     Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
                     // TODO: handle exception
@@ -158,9 +151,32 @@ public class JamActivity extends Activity {
 
 
             }
-        });
+        }).start();
 
-        thread.start();
+        //thread.start();
 
     }
 }
+    /*public void onClick(View v) {
+
+        new Thread(new Runnable() {
+
+            public void run() {
+
+                int caractere = hamlet.indexOf("Être ou ne pas être");
+
+                runOnUiThread(new Runnable() {
+
+                    public void run() {
+
+                        v.setText("Cette phrase se trouve au " + caractere + " ème caractère.");
+
+                    }
+
+                });
+
+            }
+
+        }).start();
+
+    }*/
