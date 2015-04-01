@@ -152,6 +152,7 @@
         <item name="android:shadowDy">1.0</item>
         <item name="android:shadowRadius">1</item>
         <item name="android:background">@drawable/jam_button</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
     <style name="RedButton">
         <item name="android:layout_width">fill_parent</item>
