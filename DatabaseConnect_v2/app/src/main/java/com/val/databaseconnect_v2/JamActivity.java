@@ -40,9 +40,9 @@ import javax.sound.sampled.TargetDataLine;
 /**
  * Created by Val on 19/02/2015.
  */
-public class JamActivity extends Activity {
+/*public class JamActivity extends Activity {
 
-   /* public void onCreate(View v) {
+   *//* public void onCreate(View v) {
         try {
             InetAddress addr = InetAddress.getByName("127.0.0.1");
             ThreadClient threadClient = new ThreadClient(50005, addr);
@@ -52,7 +52,7 @@ public class JamActivity extends Activity {
             Log.d("Host not found", "Host not found");
         }
 
-    }*/
+    }*//*
     public byte[] buffer;
     private int port;
     //static AudioInputStream ais;
@@ -68,10 +68,10 @@ public class JamActivity extends Activity {
                 //AudioFormat format = new AudioFormat(encoding, rate, sampleSize, channels, (sampleSize / 8) * channels, rate, bigEndian);
 
                 // DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
-                /*if (!AudioSystem.isLineSupported(info)) {
+                *//*if (!AudioSystem.isLineSupported(info)) {
                     System.out.println("Line matching " + info + " not supported.");
                     return;
-                }*/
+                }*//*
 
                 try {
                     addr = InetAddress.getByName("192.168.43.82");
@@ -157,7 +157,7 @@ public class JamActivity extends Activity {
 
     }
 }
-    /*public void onClick(View v) {
+    *//*public void onClick(View v) {
 
         new Thread(new Runnable() {
 
@@ -180,3 +180,127 @@ public class JamActivity extends Activity {
         }).start();
 
     }*/
+public class JamActivity extends Activity {
+
+public void onCreate(View v) {
+        new SendData().execute();
+        }
+        }
+//}
+class SendData extends AsyncTask<String, String, String> {
+
+
+    /**
+     * Getting user details in background thread
+     * */
+    public byte[] buffer;
+    private int port;
+
+    protected void onPreExecute() {
+        // user with this username found
+        // Edit Text
+       /* username = (TextView) findViewById(R.id.username);
+        email = (TextView) findViewById(R.id.email);
+
+        // display user data in EditText
+        username.setText(displayUsername);
+        email.setText(displayEmail);*/
+    }
+
+    protected String doInBackground(String... params) {
+
+        //TargetDataLine line;
+        DatagramPacket dgp;
+        port = 50005;
+        InetAddress addr;
+        int countPacket=0;
+        Log.e("thread lance", "Thread OK");
+
+
+        try {
+            addr = InetAddress.getByName("10.4.183.136");
+
+            int buffsize = 512;
+
+            byte data[] ;
+            data= new byte[buffsize];
+
+            final int λ = 256;
+            ByteBuffer buffer = ByteBuffer.allocate(λ * 8);
+
+
+            // LocalHost : passer en réseau local
+
+            Log.e("Socket", "Avant creation Socket");
+            try(DatagramSocket socket = new DatagramSocket()) {
+                while (countPacket <100) {
+
+                    buffer.clear();
+                    for(double i = 0.0; i < λ; i++) {
+                        //System.out.println(j + " " + i);
+                        //once for each sample
+                        buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
+                        //buffer.putShort((short)(Math.sin(Math.random()*4 * (λ/i)) * Short.MAX_VALUE));
+                    }
+                    //}
+                   /* runOnUiThread(new Runnable() {
+
+                        public void run() {
+
+                            Log.d("Envoi", "Envoi OK");
+
+                        }
+
+                    });*/
+
+                    data = buffer.array();
+                    dgp = new DatagramPacket(data, data.length, addr, port);
+                    //Log.d("Socket", "Avant envoi Socket");
+
+                    socket.send(dgp);
+
+                    countPacket++;
+                    Log.d("Envoi packet "+ countPacket, "Envoi OK");
+                }
+            }
+
+
+        } catch (UnknownHostException e) {
+            // Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
+            // TODO: handle exception
+            Log.d("Host", "Unknown Host");
+        } catch (SocketException e) {
+            // Toast.makeText(getApplicationContext(), "Socket error", Toast.LENGTH_LONG).show();
+            // TODO: handle exception
+            Log.d("Socket", "Socket Exception");
+        } catch (IOException e2) {
+            // Toast.makeText(getApplicationContext(), "Input / Output error", Toast.LENGTH_LONG).show();
+            // TODO: handle exception
+        }
+
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+//                }
+//            });
+
+        return null;
+    }
+
+    /**
+     * After completing background task Dismiss the progress dialog
+     * **/
+    protected void onPostExecute() {
+        Log.d("Envoi", "Envoi OK");
+        //Toast.
+        // user with this username found
+        // Edit Text
+       /* username = (TextView) findViewById(R.id.username);
+        email = (TextView) findViewById(R.id.email);
+
+        // display user data in EditText
+        username.setText(displayUsername);
+        email.setText(displayEmail);*/
+    }
+}
