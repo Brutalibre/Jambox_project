@@ -183,6 +183,7 @@ import javax.sound.sampled.TargetDataLine;
 public class JamActivity extends Activity {
 
 public void onCreate(View v) {
+    //super.onCreate();
         new SendData().execute();
         }
         }
@@ -215,18 +216,22 @@ class SendData extends AsyncTask<String, String, String> {
         InetAddress addr;
         int countPacket=0;
         Log.e("thread lance", "Thread OK");
+        long timeExe=0;
 
 
         try {
             addr = InetAddress.getByName("10.4.183.136");
 
-            int buffsize = 512;
+            int buffSize = 32*4;
+            //Test sur le temps de reception
+            buffSize+=8;
 
             byte data[] ;
-            data= new byte[buffsize];
+            data= new byte[buffSize];
 
             final int λ = 256;
-            ByteBuffer buffer = ByteBuffer.allocate(λ * 8);
+            //34, 8 bytes en plus pour le temps
+            ByteBuffer buffer = ByteBuffer.allocate(34*4);
 
 
             // LocalHost : passer en réseau local
@@ -234,13 +239,13 @@ class SendData extends AsyncTask<String, String, String> {
             Log.e("Socket", "Avant creation Socket");
             try(DatagramSocket socket = new DatagramSocket()) {
                 while (countPacket <100) {
-
+                    timeExe = System.currentTimeMillis();
                     buffer.clear();
-                    for(double i = 0.0; i < λ; i++) {
+                    for(double i = 0.0; i < 32; i++) {
                         //System.out.println(j + " " + i);
                         //once for each sample
                         buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
-                        //buffer.putShort((short)(Math.sin(Math.random()*4 * (λ/i)) * Short.MAX_VALUE));
+                        buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
                     }
                     //}
                    /* runOnUiThread(new Runnable() {
@@ -252,7 +257,7 @@ class SendData extends AsyncTask<String, String, String> {
                         }
 
                     });*/
-
+                    buffer.putLong(timeExe);
                     data = buffer.array();
                     dgp = new DatagramPacket(data, data.length, addr, port);
                     //Log.d("Socket", "Avant envoi Socket");
@@ -260,7 +265,12 @@ class SendData extends AsyncTask<String, String, String> {
                     socket.send(dgp);
 
                     countPacket++;
-                    Log.d("Envoi packet "+ countPacket, "Envoi OK");
+                    Log.e("Envoi packet "+ countPacket, "Envoi OK");
+                    try {
+                        Thread.sleep(2);
+                    } catch(InterruptedException ex) {
+                        Thread.currentThread().interrupt();
+                    }
                 }
             }
 
@@ -268,11 +278,11 @@ class SendData extends AsyncTask<String, String, String> {
         } catch (UnknownHostException e) {
             // Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
             // TODO: handle exception
-            Log.d("Host", "Unknown Host");
+            Log.e("Host", "Unknown Host");
         } catch (SocketException e) {
             // Toast.makeText(getApplicationContext(), "Socket error", Toast.LENGTH_LONG).show();
             // TODO: handle exception
-            Log.d("Socket", "Socket Exception");
+            Log.e("Socket", "Socket Exception");
         } catch (IOException e2) {
             // Toast.makeText(getApplicationContext(), "Input / Output error", Toast.LENGTH_LONG).show();
             // TODO: handle exception
@@ -292,7 +302,7 @@ class SendData extends AsyncTask<String, String, String> {
      * After completing background task Dismiss the progress dialog
      * **/
     protected void onPostExecute() {
-        Log.d("Envoi", "Envoi OK");
+        Log.e("Envoi", "Envoi OK");
         //Toast.
         // user with this username found
         // Edit Text
