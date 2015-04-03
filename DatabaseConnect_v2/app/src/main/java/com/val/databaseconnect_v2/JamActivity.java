@@ -26,6 +26,7 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 /*
@@ -208,11 +209,14 @@ class SendData extends AsyncTask<String, String, String> {
         // display user data in EditText
         username.setText(displayUsername);
         email.setText(displayEmail);*/
+
     }
 
     protected String doInBackground(String... params) {
 
         //TargetDataLine line;
+        Date dateDebut = new Date();
+        
         DatagramPacket dgp;
         port = 50005;
         InetAddress addr;
@@ -241,7 +245,8 @@ class SendData extends AsyncTask<String, String, String> {
             Log.e("Socket", "Avant creation Socket");
             try(DatagramSocket socket = new DatagramSocket()) {
                 while (countPacket <100) {
-                    timeExe = System.currentTimeMillis();
+                    //timeExe = System.currentTimeMillis();
+                    timeExe=dateDebut.getTime();
                     buffer.clear();
                     for(double i = 0.0; i < 32; i++) {
                         //System.out.println(j + " " + i);
@@ -269,7 +274,7 @@ class SendData extends AsyncTask<String, String, String> {
                     countPacket++;
                     Log.e("Envoi packet "+ countPacket, "Envoi OK");
                     try {
-                        Thread.sleep(2);
+                        Thread.sleep(1);
                     } catch(InterruptedException ex) {
                         Thread.currentThread().interrupt();
                     }
