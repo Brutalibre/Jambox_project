@@ -273,11 +273,11 @@ class SendData extends AsyncTask<String, String, String> {
 
                     countPacket++;
                     Log.e("Envoi packet "+ countPacket, "Envoi OK");
-                    try {
-                        Thread.sleep(1);
-                    } catch(InterruptedException ex) {
-                        Thread.currentThread().interrupt();
-                    }
+//                    try {
+//                        Thread.sleep(1);
+//                    } catch(InterruptedException ex) {
+//                        Thread.currentThread().interrupt();
+//                    }
                 }
             }
 
