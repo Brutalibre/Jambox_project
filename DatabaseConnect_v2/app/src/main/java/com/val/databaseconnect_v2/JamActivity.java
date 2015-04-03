@@ -182,10 +182,11 @@ import javax.sound.sampled.TargetDataLine;
     }*/
 public class JamActivity extends Activity {
 
-public void onCreate(View v) {
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         new SendData().execute();
-        }
-        }
+    }
+}
 //}
 class SendData extends AsyncTask<String, String, String> {
 
@@ -218,7 +219,7 @@ class SendData extends AsyncTask<String, String, String> {
 
 
         try {
-            addr = InetAddress.getByName("10.4.183.136");
+            addr = InetAddress.getByName("192.168.43.82");
 
             int buffsize = 512;
 
