@@ -56,8 +56,8 @@ public final class R {
         public static final int inputEmail=0x7f0a000c;
         public static final int inputPwd=0x7f0a0001;
         public static final int inputUsername=0x7f0a0000;
-        public static final int quitButton=0x7f0a0011;
-        public static final int recordButton=0x7f0a0010;
+        public static final int quitButton=0x7f0a0010;
+        public static final int recordButton=0x7f0a0011;
         public static final int simplePlot=0x7f0a0012;
         public static final int userData=0x7f0a0004;
         public static final int username=0x7f0a000e;

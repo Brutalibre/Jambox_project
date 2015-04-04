@@ -59,13 +59,13 @@
       <file leaf-file-name="jam.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/jam.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="714">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            <state vertical-scroll-proportion="-12.62963" vertical-offset="135" max-vertical-offset="765">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <element signature="e#359#381#0" expanded="true" />
-                <element signature="e#531#564#0" expanded="true" />
-                <element signature="e#944#960#0" expanded="true" />
-                <element signature="e#1197#1211#0" expanded="true" />
+                <element signature="e#326#348#0" expanded="true" />
+                <element signature="e#548#581#0" expanded="true" />
+                <element signature="e#1011#1025#0" expanded="true" />
+                <element signature="e#1315#1331#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <file leaf-file-name="ArduinoUsbService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45609757" vertical-offset="10404" max-vertical-offset="13770">
-              <caret line="623" column="22" selection-start-line="623" selection-start-column="22" selection-end-line="627" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.49756098" vertical-offset="10404" max-vertical-offset="13770">
+              <caret line="624" column="26" selection-start-line="624" selection-start-column="26" selection-end-line="624" selection-end-column="26" />
               <folding>
                 <element signature="e#0#31931#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -1119,9 +1119,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/jam.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/jam.xml" />
       </list>
     </option>
   </component>
@@ -1630,7 +1630,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34160584" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34160584" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3437967" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15482573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2028,8 +2028,8 @@
         <state vertical-scroll-proportion="0.79432625" vertical-offset="1262" max-vertical-offset="1955">
           <caret line="123" column="10" selection-start-line="112" selection-start-column="34" selection-end-line="123" selection-end-column="10" />
           <folding>
-            <element signature="e#3231#3767#0" expanded="true" />
-            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#3231#3767#0" expanded="false" />
+            <element signature="e#3756#3757#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2072,17 +2072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.107143" vertical-offset="3847" max-vertical-offset="8449">
-          <caret line="238" column="76" selection-start-line="238" selection-start-column="76" selection-end-line="238" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8905#8906#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42713568" vertical-offset="561" max-vertical-offset="1632">
@@ -2107,22 +2096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/jam.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="714">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding>
-            <element signature="e#359#381#0" expanded="true" />
-            <element signature="e#531#564#0" expanded="true" />
-            <element signature="e#944#960#0" expanded="true" />
-            <element signature="e#1197#1211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.321513" vertical-offset="0" max-vertical-offset="527">
@@ -2131,10 +2104,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/jam.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.62963" vertical-offset="135" max-vertical-offset="765">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#326#348#0" expanded="true" />
+            <element signature="e#548#581#0" expanded="true" />
+            <element signature="e#1011#1025#0" expanded="true" />
+            <element signature="e#1315#1331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.107143" vertical-offset="3847" max-vertical-offset="8449">
+          <caret line="238" column="76" selection-start-line="238" selection-start-column="76" selection-end-line="238" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45609757" vertical-offset="10404" max-vertical-offset="13770">
-          <caret line="623" column="22" selection-start-line="623" selection-start-column="22" selection-end-line="627" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.49756098" vertical-offset="10404" max-vertical-offset="13770">
+          <caret line="624" column="26" selection-start-line="624" selection-start-column="26" selection-end-line="624" selection-end-column="26" />
           <folding>
             <element signature="e#0#31931#0" expanded="true" />
             <element signature="imports" expanded="true" />

@@ -37,8 +37,8 @@ int id goBtn 0x7f0a000d
 int id inputEmail 0x7f0a000c
 int id inputPwd 0x7f0a0001
 int id inputUsername 0x7f0a0000
-int id quitButton 0x7f0a0011
-int id recordButton 0x7f0a0010
+int id quitButton 0x7f0a0010
+int id recordButton 0x7f0a0011
 int id simplePlot 0x7f0a0012
 int id userData 0x7f0a0004
 int id username 0x7f0a000e
