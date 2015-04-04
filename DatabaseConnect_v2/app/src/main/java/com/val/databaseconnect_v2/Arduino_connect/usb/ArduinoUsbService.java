@@ -43,8 +43,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 
 //import com.android.future.usb.UsbAccessory;
 //import com.android.future.usb.UsbManager;
@@ -63,6 +70,11 @@ public class ArduinoUsbService extends IntentService {
     static final int MSG_SEND_EXIT_TO_CLIENT  = 20;
     static final String MSG_KEY = "msg";
 
+
+    static final String adresse = "192.168.43.82";
+
+
+
     ArrayList<Messenger> mClients = new ArrayList<Messenger>();
 
     private boolean accessoryDetached_ = false;
@@ -79,7 +91,7 @@ public class ArduinoUsbService extends IntentService {
 
     private boolean startApplication_ = true;
     private boolean stopApplication_ = true;
-    private Class applicationClass_ = com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity.class;
+    private Class applicationClass_ = com.val.databaseconnect_v2.JamActivity.class;
     private Intent startApplicationIntent_;
     private boolean debug_ = false;
 
@@ -300,7 +312,7 @@ public class ArduinoUsbService extends IntentService {
                 }
             } catch (Exception ee) {
                 if (debug_) {
-                    Log.e(TAG, "Server handleMessage Exception: "+ Utils.getExceptionStack(ee, true));
+//                    Log.e(TAG, "Server handleMessage Exception: "+ Utils.getExceptionStack(ee, true));
                     //showMessage("handleMessage: " +ee.getMessage() + "\n");
                 }
             }
@@ -581,16 +593,69 @@ public class ArduinoUsbService extends IntentService {
     public void doWork() {
         Log.d(TAG, "doWork entered: mUsbManager="+mUsbManager_+", accessory="+accessory_+", descriptor="+descriptor_+", inputStream="+inputStream_+", outputStream="+outputStream_);
         int ret = 0;
-        byte[] buffer = new byte[16384];
-        int i;
+        byte[] buffer = new byte[2048];
+
+        DatagramPacket dgp_send;
+        DatagramPacket dgp_rec;
+        int port = 50005;
+        InetAddress addr;
+
 
         while (ret >= 0 & canRun_) {
             try {
                 ret = inputStream_.read(buffer);
-            } catch (IOException e) {
-                break;
+
+
+                /**
+                 * Distant server part : send the byte array "data" to the computer's server
+                 */
+                addr = InetAddress.getByName(adresse);
+
+                // LocalHost : passer en réseau local
+
+                try(DatagramSocket socket = new DatagramSocket()) {
+
+                    // SENDING TO DISTANT SERVER
+                    byte[] data_send = Arrays.copyOf(buffer, ret);
+                    dgp_send = new DatagramPacket(data_send, data_send.length, addr, port);
+                    socket.send(dgp_send);
+
+
+//                    // RECEIVING FROM DISTANT SERVER + SENDING TO ARDUINO
+//                    byte[] data_rec = new byte[512];
+//                    dgp_rec = new DatagramPacket(data_rec, data_rec.length);
+//                    socket.receive(dgp_rec);
+//                    sendBytesToServer(dgp_rec.getData());
+
+                }
+
+                catch (UnknownHostException e) {
+                    // Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
+                    // TODO: handle exception
+                    Log.e("Host", "Unknown Host");
+                } catch (SocketException e) {
+                    // Toast.makeText(getApplicationContext(), "Socket error", Toast.LENGTH_LONG).show();
+                    // TODO: handle exception
+                    Log.e("Socket", "Socket Exception");
+                } catch (IOException e2) {
+                    // Toast.makeText(getApplicationContext(), "Input / Output error", Toast.LENGTH_LONG).show();
+                    // TODO: handle exception
+                }
+
+
             }
-            byte[] data = Arrays.copyOf(buffer, ret);
+            catch(Exception e){
+                e.printStackTrace();
+            }
+
+
+
+
+        /*
+         * End of distant server.
+         */
+
+
             //data += " received";
 			
     /*
@@ -600,13 +665,8 @@ public class ArduinoUsbService extends IntentService {
     		}
     		String tmpData2 = buffer2.toString() +" received\n";
 
-            */
-            String str = new String(data);
-
-
-
-            sendMessageToServer(str);
-
+//            */
+//            String str = new String(data);
 			/*
 			
     		StringBuilder buffer3 = new StringBuilder();
@@ -617,7 +677,7 @@ public class ArduinoUsbService extends IntentService {
 
 			sendMessageToClients(tmpData3);
 			*/
-            sendBytesToClients(data);
+//            sendBytesToClients(data);
             //sendBytesToServer(data);
 
 /*

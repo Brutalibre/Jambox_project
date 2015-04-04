@@ -41,7 +41,7 @@ public final class R {
         public static final int red_button=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0012;
+        public static final int action_settings=0x7f0a0013;
         public static final int btnAddFriend=0x7f0a000a;
         public static final int btnCreateUser=0x7f0a0003;
         public static final int btnJam=0x7f0a0005;
@@ -56,8 +56,9 @@ public final class R {
         public static final int inputEmail=0x7f0a000c;
         public static final int inputPwd=0x7f0a0001;
         public static final int inputUsername=0x7f0a0000;
-        public static final int list=0x7f0a0010;
-        public static final int simplePlot=0x7f0a0011;
+        public static final int quitButton=0x7f0a0011;
+        public static final int recordButton=0x7f0a0010;
+        public static final int simplePlot=0x7f0a0012;
         public static final int userData=0x7f0a0004;
         public static final int username=0x7f0a000e;
     }
@@ -95,15 +96,16 @@ public final class R {
         public static final int no_usb_devices_attached_message=0x7f07000c;
         public static final int password=0x7f07000d;
         public static final int quit=0x7f07000e;
-        public static final int starter_app_name=0x7f07000f;
-        public static final int title_activity_display_user=0x7f070010;
-        public static final int usb_device_attached=0x7f070011;
-        public static final int usb_device_detached=0x7f070012;
-        public static final int username=0x7f070013;
-        public static final int usernameOrEmail=0x7f070014;
-        public static final int viewFriends=0x7f070015;
-        public static final int viewProfile=0x7f070016;
-        public static final int viewUsers=0x7f070017;
+        public static final int record=0x7f07000f;
+        public static final int starter_app_name=0x7f070010;
+        public static final int title_activity_display_user=0x7f070011;
+        public static final int usb_device_attached=0x7f070012;
+        public static final int usb_device_detached=0x7f070013;
+        public static final int username=0x7f070014;
+        public static final int usernameOrEmail=0x7f070015;
+        public static final int viewFriends=0x7f070016;
+        public static final int viewProfile=0x7f070017;
+        public static final int viewUsers=0x7f070018;
     }
     public static final class style {
         /** 

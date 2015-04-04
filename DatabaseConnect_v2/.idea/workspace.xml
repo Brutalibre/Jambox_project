@@ -59,9 +59,14 @@
       <file leaf-file-name="jam.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/jam.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="714">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding>
+                <element signature="e#359#381#0" expanded="true" />
+                <element signature="e#531#564#0" expanded="true" />
+                <element signature="e#944#960#0" expanded="true" />
+                <element signature="e#1197#1211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -69,14 +74,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JamActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JamActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43735224" vertical-offset="4490" max-vertical-offset="5576">
-              <caret line="275" column="23" selection-start-line="275" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+            <state vertical-scroll-proportion="-7.107143" vertical-offset="3847" max-vertical-offset="8449">
+              <caret line="238" column="76" selection-start-line="238" selection-start-column="76" selection-end-line="238" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#8905#8906#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArduinoUsbService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45609757" vertical-offset="10404" max-vertical-offset="13770">
+              <caret line="623" column="22" selection-start-line="623" selection-start-column="22" selection-end-line="627" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#31931#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2538#2549#0" expanded="true" />
+                <element signature="e#4378#4444#0" expanded="true" />
+                <element signature="e#4600#4666#0" expanded="true" />
+                <element signature="e#10499#10565#0" expanded="true" />
+                <element signature="e#12742#12808#0" expanded="true" />
+                <element signature="e#15095#15096#0" expanded="true" />
+                <element signature="e#15141#15142#0" expanded="true" />
+                <element signature="e#15253#16179#0" expanded="true" />
+                <element signature="e#16172#16173#0" expanded="true" />
+                <element signature="e#16214#16215#0" expanded="true" />
+                <element signature="e#16256#16257#0" expanded="true" />
+                <element signature="e#17183#17237#0" expanded="true" />
+                <element signature="e#17356#17410#0" expanded="true" />
+                <element signature="e#18911#18977#0" expanded="true" />
+                <element signature="e#19121#19198#0" expanded="true" />
+                <element signature="e#19315#19381#0" expanded="true" />
+                <element signature="e#20392#20446#0" expanded="true" />
+                <element signature="e#21986#22523#0" expanded="true" />
+                <element signature="e#22508#22509#0" expanded="true" />
+                <element signature="e#23360#23361#0" expanded="true" />
+                <element signature="e#23404#23405#0" expanded="true" />
+                <element signature="e#23679#23750#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsbActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/UsbActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5468" max-vertical-offset="7242">
+              <caret line="336" column="33" selection-start-line="336" selection-start-column="33" selection-end-line="336" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -914,7 +965,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4272762511032" />
+        <entry key="$PROJECT_DIR$" value="4273046914522" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1040,21 +1091,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/NewUserActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/DisplayUserActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamSession.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/interfaces/Viewable.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/titlebar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/accessory_filter.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/MainScreenActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Client.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/StartServiceActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/UsbActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoTerminalActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/terminal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" />
@@ -1062,15 +1104,24 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/red_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main_screen.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Preferences.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/jam_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_friend.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_user.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/jam.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoTerminalActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Preferences.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/interfaces/Viewable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/StartServiceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/MainScreenActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/UsbActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/jam.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java" />
       </list>
     </option>
   </component>
@@ -1122,6 +1173,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1130,6 +1195,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="DatabaseConnect_v2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
@@ -1148,6 +1217,66 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="DatabaseConnect_v2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
@@ -1167,6 +1296,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="databaseconnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databaseconnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DatabaseConnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databaseconnect_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1199,6 +1400,9 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="F:/ArduinoTerminal" />
+    <property name="SearchEverywhereHistoryKey" value="TerminalViewable&#9;FILE&#9;file://C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java&#10;&#9;FILE&#9;file://C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -1421,15 +1625,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34160584" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20978552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34160584" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34160584" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3437967" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15482573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38248175" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1439,8 +1645,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20978552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1496,31 +1700,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4312" max-vertical-offset="5372">
-          <caret line="262" column="9" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/jam.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2214" max-vertical-offset="3094">
           <caret line="144" column="71" selection-start-line="144" selection-start-column="71" selection-end-line="144" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1546,13 +1730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/interfaces/Connectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.114349775" vertical-offset="0" max-vertical-offset="446">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/AllFriendsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72421527" vertical-offset="357" max-vertical-offset="2550">
@@ -1565,13 +1742,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/interfaces/Viewable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8295964" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1611,21 +1781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1955">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5631659" vertical-offset="571" max-vertical-offset="12988">
-          <caret line="94" column="50" selection-start-line="0" selection-start-column="2" selection-end-line="758" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1639,24 +1794,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.gif">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/MainScreenActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.964286" vertical-offset="1428" max-vertical-offset="2057">
-          <caret line="134" column="91" selection-start-line="134" selection-start-column="91" selection-end-line="134" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2435312" vertical-offset="418" max-vertical-offset="3077">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#5935#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -1681,69 +1818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/StartServiceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="941" max-vertical-offset="1700">
-          <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoTerminalActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1122">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/red_button.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56925416" vertical-offset="0" max-vertical-offset="657">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/UsbActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2741" max-vertical-offset="7259">
-          <caret line="214" column="56" selection-start-line="214" selection-start-column="56" selection-end-line="214" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6222" max-vertical-offset="11815">
-          <caret line="421" column="83" selection-start-line="421" selection-start-column="83" selection-end-line="421" selection-end-column="83" />
-          <folding>
-            <element signature="e#4140#4206#0" expanded="false" />
-            <element signature="e#4362#4428#0" expanded="false" />
-            <element signature="e#10261#10327#0" expanded="false" />
-            <element signature="e#12504#12570#0" expanded="false" />
-            <element signature="e#18671#18737#0" expanded="false" />
-            <element signature="e#19075#19141#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.058981232" vertical-offset="600" max-vertical-offset="1615">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Preferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6126761" vertical-offset="1201" max-vertical-offset="1649">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1771,14 +1849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38812786" vertical-offset="0" max-vertical-offset="657">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="1275">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1897,23 +1967,199 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/interfaces/Connectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07762557" vertical-offset="0" max-vertical-offset="657">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoTerminalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53424656" vertical-offset="363" max-vertical-offset="1122">
+          <caret line="42" column="14" selection-start-line="0" selection-start-column="2" selection-end-line="60" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4916286" vertical-offset="992" max-vertical-offset="2159">
+          <caret line="116" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0258752" vertical-offset="2131" max-vertical-offset="3077">
+          <caret line="165" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/StartServiceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5531914" vertical-offset="8" max-vertical-offset="1888">
+          <caret line="68" column="8" selection-start-line="0" selection-start-column="2" selection-end-line="112" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1848" max-vertical-offset="4675">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/os/HandlerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4539007" vertical-offset="590" max-vertical-offset="2363">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/MainScreenActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79432625" vertical-offset="1262" max-vertical-offset="1955">
+          <caret line="123" column="10" selection-start-line="112" selection-start-column="34" selection-end-line="123" selection-end-column="10" />
+          <folding>
+            <element signature="e#3231#3767#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/interfaces/Viewable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1292">
+          <caret line="67" column="17" selection-start-line="45" selection-start-column="4" selection-end-line="67" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#2282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/TerminalViewable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1362" max-vertical-offset="3043">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#5171#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2787#3241#0" expanded="true" />
+            <element signature="e#3466#3629#0" expanded="true" />
+            <element signature="e#3610#3611#0" expanded="true" />
+            <element signature="e#3728#3857#0" expanded="true" />
+            <element signature="e#3842#3843#0" expanded="true" />
+            <element signature="e#4111#4238#0" expanded="true" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4475#4604#0" expanded="true" />
+            <element signature="e#4589#4590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/UsbActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5468" max-vertical-offset="7242">
+          <caret line="336" column="33" selection-start-line="336" selection-start-column="33" selection-end-line="336" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.107143" vertical-offset="3847" max-vertical-offset="8449">
+          <caret line="238" column="76" selection-start-line="238" selection-start-column="76" selection-end-line="238" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42713568" vertical-offset="561" max-vertical-offset="1632">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="1275">
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.120567374" vertical-offset="0" max-vertical-offset="1955">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/jam.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="714">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#359#381#0" expanded="true" />
+            <element signature="e#531#564#0" expanded="true" />
+            <element signature="e#944#960#0" expanded="true" />
+            <element signature="e#1197#1211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/JamActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43735224" vertical-offset="4490" max-vertical-offset="5576">
-          <caret line="275" column="23" selection-start-line="275" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.321513" vertical-offset="0" max-vertical-offset="527">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/val/databaseconnect_v2/Arduino_connect/usb/ArduinoUsbService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45609757" vertical-offset="10404" max-vertical-offset="13770">
+          <caret line="623" column="22" selection-start-line="623" selection-start-column="22" selection-end-line="627" selection-end-column="59" />
           <folding>
+            <element signature="e#0#31931#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#2538#2549#0" expanded="true" />
+            <element signature="e#4378#4444#0" expanded="true" />
+            <element signature="e#4600#4666#0" expanded="true" />
+            <element signature="e#10499#10565#0" expanded="true" />
+            <element signature="e#12742#12808#0" expanded="true" />
+            <element signature="e#15095#15096#0" expanded="true" />
+            <element signature="e#15141#15142#0" expanded="true" />
+            <element signature="e#15253#16179#0" expanded="true" />
+            <element signature="e#16172#16173#0" expanded="true" />
+            <element signature="e#16214#16215#0" expanded="true" />
+            <element signature="e#16256#16257#0" expanded="true" />
+            <element signature="e#17183#17237#0" expanded="true" />
+            <element signature="e#17356#17410#0" expanded="true" />
+            <element signature="e#18911#18977#0" expanded="true" />
+            <element signature="e#19121#19198#0" expanded="true" />
+            <element signature="e#19315#19381#0" expanded="true" />
+            <element signature="e#20392#20446#0" expanded="true" />
+            <element signature="e#21986#22523#0" expanded="true" />
+            <element signature="e#22508#22509#0" expanded="true" />
+            <element signature="e#23360#23361#0" expanded="true" />
+            <element signature="e#23404#23405#0" expanded="true" />
+            <element signature="e#23679#23750#0" expanded="true" />
           </folding>
         </state>
       </provider>

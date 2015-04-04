@@ -1,7 +1,13 @@
 package com.val.databaseconnect_v2;
 
 import android.app.Activity;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.hardware.usb.UsbAccessory;
+import android.hardware.usb.UsbManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +18,10 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import com.val.databaseconnect_v2.Arduino_connect.usb.TerminalViewable;
+import com.val.databaseconnect_v2.Arduino_connect.usb.UsbActivity;
+import com.val.databaseconnect_v2.Arduino_connect.usb.interfaces.Viewable;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -181,143 +191,302 @@ import javax.sound.sampled.TargetDataLine;
         }).start();
 
     }*/
-public class JamActivity extends Activity {
+public class JamActivity extends UsbActivity {
 
+    private String TAG = "StartServiceActivity";
+
+    private boolean mPermissionRequestPending;
+    private PendingIntent mPermissionIntent;
+    private UsbManager mUsbManager;
+
+    static final String ACTION_USB_PERMISSION = "com.val.databaseconnect_v2.Arduino_connect.usb.StartServiceActivity.action.USB_PERMISSION";
+    static final String ACTION_STOP_SERVICE = "com.val.databaseconnect_v2.Arduino_connect.usb.StartServiceActivity.action.STOP_SERVICE";
+
+    private Intent startServiceIntent;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        new SendData().execute();
+        createAndSetViews();
+
+//        short value = (short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE);
+
+//        short value = (short) 44000;
+
+        /* for testing purpose!!
+
+        byte data[] ;
+
+        final int λ = 256;
+        //34, 8 bytes en plus pour le temps
+        ByteBuffer buffer = ByteBuffer.allocate(34*4);
+
+        for(double i = 0.0; i < 32; i++) {
+            //System.out.println(j + " " + i);
+            //once for each sample
+            buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
+            buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
+        }
+        data = buffer.array();
+
+        Log.i("blabla", data.toString());
+        */
+
+        setServices();
+        //new SendData().execute();
     }
-}
-//}
-class SendData extends AsyncTask<String, String, String> {
 
+    private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if (ACTION_USB_PERMISSION.equals(action)) {
+                synchronized (this) {
+                    //UsbAccessory accessory = UsbManager.getAccessory(intent);
 
-    /**
-     * Getting user details in background thread
-     * */
-    public byte[] buffer;
-    private int port;
-
-    protected void onPreExecute() {
-        // user with this username found
-        // Edit Text
-       /* username = (TextView) findViewById(R.id.username);
-        email = (TextView) findViewById(R.id.email);
-
-        // display user data in EditText
-        username.setText(displayUsername);
-        email.setText(displayEmail);*/
-
-    }
-
-    protected String doInBackground(String... params) {
-
-        //TargetDataLine line;
-        Date dateDebut = new Date();
-        
-        DatagramPacket dgp;
-        port = 50005;
-        InetAddress addr;
-        int countPacket=0;
-        Log.e("thread lance", "Thread OK");
-        long timeExe=0;
-
-
-        try {
-            addr = InetAddress.getByName("192.168.43.82");
-
-            int buffSize = 32*4;
-            //Test sur le temps de reception
-            buffSize+=8;
-
-            byte data[] ;
-            data= new byte[buffSize];
-
-            final int λ = 256;
-            //34, 8 bytes en plus pour le temps
-            ByteBuffer buffer = ByteBuffer.allocate(34*4);
-
-
-            // LocalHost : passer en réseau local
-
-            Log.e("Socket", "Avant creation Socket");
-            try(DatagramSocket socket = new DatagramSocket()) {
-                while (countPacket <100) {
-                    //timeExe = System.currentTimeMillis();
-                    timeExe=dateDebut.getTime();
-                    buffer.clear();
-                    for(double i = 0.0; i < 32; i++) {
-                        //System.out.println(j + " " + i);
-                        //once for each sample
-                        buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
-                        buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
+                    UsbAccessory accessory = (UsbAccessory) intent.getParcelableExtra(UsbManager.EXTRA_ACCESSORY);
+                    if (intent.getBooleanExtra(
+                            UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
+                        startService(startServiceIntent);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "permission denied for accessory "
+                                + accessory, Toast.LENGTH_LONG).show();
                     }
-                    //}
-                   /* runOnUiThread(new Runnable() {
+                    mPermissionRequestPending = false;
+                }
+                unregisterReceiver(mUsbReceiver);
+                finish();
+            } else if (UsbManager.ACTION_USB_ACCESSORY_DETACHED.equals(action)) {
+            }
+        }
+    };
 
-                        public void run() {
 
-                            Log.d("Envoi", "Envoi OK");
+    protected void createAndSetViews() {
+        currentViewable_ = new TerminalViewable();
+        currentViewable_.setActivity(this);
+        //this.setContentView(R.layout.jam);
 
-                        }
+        signalToUi(Viewable.DISABLE_CONTROLS_TYPE, null);
+    }
 
-                    });*/
-                    buffer.putLong(timeExe);
-                    data = buffer.array();
-                    dgp = new DatagramPacket(data, data.length, addr, port);
-                    //Log.d("Socket", "Avant envoi Socket");
+    private void setServices(){
+        //        Toast.makeText(getApplicationContext(), "onCreate entered", Toast.LENGTH_LONG).show();
+        //mUsbManager = UsbManager.getInstance(this);
 
-                    socket.send(dgp);
+        mUsbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
+        startServiceIntent = new Intent(this, com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoUsbService.class);
 
-                    countPacket++;
-                    Log.e("Envoi packet "+ countPacket, "Envoi OK");
-//                    try {
-//                        Thread.sleep(1);
-//                    } catch(InterruptedException ex) {
-//                        Thread.currentThread().interrupt();
-//                    }
+        mPermissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(
+                ACTION_USB_PERMISSION), 0);
+        IntentFilter filter = new IntentFilter(ACTION_USB_PERMISSION);
+        filter.addAction(UsbManager.ACTION_USB_ACCESSORY_DETACHED);
+        registerReceiver(mUsbReceiver, filter);
+
+
+
+        UsbAccessory[] accessories = mUsbManager.getAccessoryList();
+        UsbAccessory accessory = (accessories == null ? null : accessories[0]);
+        if (accessory != null) {
+            if (mUsbManager.hasPermission(accessory)) {
+                startService(startServiceIntent);
+                unregisterReceiver(mUsbReceiver);
+                finish();
+            } else {
+                synchronized (mUsbReceiver) {
+                    if (!mPermissionRequestPending) {
+                        mUsbManager.requestPermission(accessory,
+                                mPermissionIntent);
+                        mPermissionRequestPending = true;
+                    }
                 }
             }
-
-
-        } catch (UnknownHostException e) {
-            // Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
-            // TODO: handle exception
-            Log.e("Host", "Unknown Host");
-        } catch (SocketException e) {
-            // Toast.makeText(getApplicationContext(), "Socket error", Toast.LENGTH_LONG).show();
-            // TODO: handle exception
-            Log.e("Socket", "Socket Exception");
-        } catch (IOException e2) {
-            // Toast.makeText(getApplicationContext(), "Input / Output error", Toast.LENGTH_LONG).show();
-            // TODO: handle exception
+        } else {
+//            Toast.makeText(getApplicationContext(), "mAccessory is null", Toast.LENGTH_LONG).show();
         }
+//        Toast.makeText(getApplicationContext(), "onCreate exited", Toast.LENGTH_LONG).show();
+    }
 
-
-        catch(Exception e){
-            e.printStackTrace();
-        }
+//    public void signalToUi(int type, Object data) {
+//        Runnable runnable = null;
+//
+//        if (type == Viewable.CHAR_SEQUENCE_TYPE) {
+//            if (data == null || ((CharSequence) data).length() == 0) {
+//                return;
+//            }
+//            final CharSequence tmpData = (CharSequence) data;
+//            runnable = new Runnable() {
+//                public void run() {
+//                    addToHistory(tmpData);
 //                }
-//            });
-
-        return null;
-    }
-
-    /**
-     * After completing background task Dismiss the progress dialog
-     * **/
-    protected void onPostExecute() {
-        Log.e("Envoi", "Envoi OK");
-        //Toast.
-        // user with this username found
-        // Edit Text
-       /* username = (TextView) findViewById(R.id.username);
-        email = (TextView) findViewById(R.id.email);
-
-        // display user data in EditText
-        username.setText(displayUsername);
-        email.setText(displayEmail);*/
-    }
+//            };
+//        } else if (
+//                ( type == Viewable.DEBUG_MESSAGE_TYPE || type == Viewable.INFO_MESSAGE_TYPE ) &&
+//                        ( type <= messageLevel_ )
+//                ) {
+//            if (data == null || ((CharSequence) data).length() == 0) {
+//                return;
+//            }
+//            final CharSequence tmpData = (CharSequence) data;
+//            runnable = new Runnable() {
+//                public void run() {
+//                    addToHistory(tmpData);
+//                }
+//            };
+//        } else if (type == Viewable.BYTE_SEQUENCE_TYPE) {
+//            if (data == null || ((byte[]) data).length == 0) {
+//                return;
+//            }
+//            final byte[] byteArray = (byte[]) data;
+//            runnable = new Runnable() {
+//                public void run() {
+//                    addToHistory(byteArray);
+//                }
+//            };
+//        }
+//
+//        if (runnable != null) {
+//            activity_.runOnUiThread(runnable);
+//        }
+//
+//    }
 }
+
+
+
+
+// AsyncTask used to communicate with the distant server.
+//class SendData extends AsyncTask<String, String, String> {
+//
+//
+//    /**
+//     * Communicating with the server in background thread
+//     * */
+//    public byte[] buffer;
+//    private int port;
+//
+//    public SendData(){
+//        super();
+//    }
+//
+//    protected void onPreExecute() {
+//        // user with this username found
+//        // Edit Text
+//       /* username = (TextView) findViewById(R.id.username);
+//        email = (TextView) findViewById(R.id.email);
+//
+//        // display user data in EditText
+//        username.setText(displayUsername);
+//        email.setText(displayEmail);*/
+//
+//    }
+//
+//    protected String doInBackground(String... params) {
+//
+//        //TargetDataLine line;
+//        Date dateDebut = new Date();
+//
+//        DatagramPacket dgp;
+//        port = 50005;
+//        InetAddress addr;
+//        int countPacket=0;
+//        Log.e("thread lance", "Thread OK");
+//        long timeExe=0;
+//
+//
+//        try {
+//            addr = InetAddress.getByName("192.168.43.82");
+//
+//            int buffSize = 32*4;
+//            //Test sur le temps de reception
+//            buffSize+=8;
+//
+//            byte data[] ;
+//            data= new byte[buffSize];
+//
+//            final int λ = 256;
+//            //34, 8 bytes en plus pour le temps
+//            ByteBuffer buffer = ByteBuffer.allocate(34*4);
+//
+//
+//            // LocalHost : passer en réseau local
+//
+//            Log.e("Socket", "Avant creation Socket");
+//            try(DatagramSocket socket = new DatagramSocket()) {
+//                while (countPacket <100) {
+//                    //timeExe = System.currentTimeMillis();
+//                    timeExe=dateDebut.getTime();
+//                    buffer.clear();
+//                    for(double i = 0.0; i < 32; i++) {
+//                        //System.out.println(j + " " + i);
+//                        //once for each sample
+//                        buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
+//                        buffer.putShort((short)(Math.sin(Math.PI*4 * (λ/i)) * Short.MAX_VALUE));
+//                    }
+//                    //}
+//                   /* runOnUiThread(new Runnable() {
+//
+//                        public void run() {
+//
+//                            Log.d("Envoi", "Envoi OK");
+//
+//                        }
+//
+//                    });*/
+//                    buffer.putLong(timeExe);
+//                    data = buffer.array();
+//                    dgp = new DatagramPacket(data, data.length, addr, port);
+//                    //Log.d("Socket", "Avant envoi Socket");
+//
+//                    socket.send(dgp);
+//
+//                    countPacket++;
+//                    Log.e("Envoi packet "+ countPacket, "Envoi OK");
+////                    try {
+////                        Thread.sleep(1);
+////                    } catch(InterruptedException ex) {
+////                        Thread.currentThread().interrupt();
+////                    }
+//                }
+//            }
+//
+//
+//        } catch (UnknownHostException e) {
+//            // Toast.makeText(getApplicationContext(), "Server error", Toast.LENGTH_LONG).show();
+//            // TODO: handle exception
+//            Log.e("Host", "Unknown Host");
+//        } catch (SocketException e) {
+//            // Toast.makeText(getApplicationContext(), "Socket error", Toast.LENGTH_LONG).show();
+//            // TODO: handle exception
+//            Log.e("Socket", "Socket Exception");
+//        } catch (IOException e2) {
+//            // Toast.makeText(getApplicationContext(), "Input / Output error", Toast.LENGTH_LONG).show();
+//            // TODO: handle exception
+//        }
+//
+//
+//        catch(Exception e){
+//            e.printStackTrace();
+//        }
+////                }
+////            });
+//
+//        return null;
+//    }
+//
+//    /**
+//     * After completing background task Dismiss the progress dialog
+//     * **/
+//    protected void onPostExecute() {
+//        Log.e("Envoi", "Envoi OK");
+//        //Toast.
+//        // user with this username found
+//        // Edit Text
+//       /* username = (TextView) findViewById(R.id.username);
+//        email = (TextView) findViewById(R.id.email);
+//
+//        // display user data in EditText
+//        username.setText(displayUsername);
+//        email.setText(displayEmail);*/
+//    }
+//}

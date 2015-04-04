@@ -9,8 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.val.databaseconnect_v2.Arduino_connect.usb.ArduinoTerminalActivity;
-import com.val.databaseconnect_v2.Arduino_connect.usb.StartServiceActivity;
+import com.val.databaseconnect_v2.JamActivity;
 
 public class MainScreenActivity extends Activity {
 
@@ -132,7 +131,7 @@ public class MainScreenActivity extends Activity {
                 // Launching "choose jammers" activity
 //                Intent i = new Intent(getApplicationContext(), ChooseJammersActivity.class);
                 // Launching Arduino Terminal activity
-                Intent i = new Intent(getApplicationContext(), StartServiceActivity.class);
+                Intent i = new Intent(getApplicationContext(), JamActivity.class);
 //                Intent i = new Intent(getApplicationContext(), JamActivity.class);
                 startActivity(i);
             }

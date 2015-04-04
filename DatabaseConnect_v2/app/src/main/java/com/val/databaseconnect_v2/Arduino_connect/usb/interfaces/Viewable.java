@@ -19,12 +19,12 @@ package com.val.databaseconnect_v2.Arduino_connect.usb.interfaces;
 import android.app.Activity;
 
 /**
- * This interface represents a separate visual object within an Activity.
- * Activity can manipulate internal state of Viewable by passing it data
- * via thread-safe "signalToUi" method.
- */
+* This interface represents a separate visual object within an Activity.
+* Activity can manipulate internal state of Viewable by passing it data
+* via thread-safe "signalToUi" method.
+*/
 public interface Viewable {
-	
+
 	public static final int DISABLE_CONTROLS_TYPE 			= 0;
 	public static final int ENABLE_CONTROLS_TYPE 			= 1;
 	public static final int CLEAR_UI_TYPE 					= 2;
@@ -37,24 +37,24 @@ public interface Viewable {
 	public static final int DEBUG_MESSAGE_TYPE 				= 24;
 	public static final int CONNECTION_ACTION 				= 100;
 	public static final int EXIT_ACTION 					= 101;
-	
+
 	/**
 	 * Thread-safe method to control Viewable and pass data to it.
 	 * @param type int specifying type of signal
-	 * @param data optional data, can be null. 
+	 * @param data optional data, can be null.
 	 */
 	void signalToUi(int type, Object data);
-	
+
 	/**
 	 * Saves internal state of Viewable to application's preferences
 	 */
 	void saveState();
-	
+
 	/**
-	 * Reads application's preferences to set internal state of Viewable  
+	 * Reads application's preferences to set internal state of Viewable
 	 */
 	void readState();
-	
+
 	/**
 	 * Sets Activity to display this Viewable
 	 * @param activity Activity that this Viewable
@@ -66,5 +66,5 @@ public interface Viewable {
      * Viewable object can not be re-used after this method is called.
      */
 	void close();
-    
+
 }

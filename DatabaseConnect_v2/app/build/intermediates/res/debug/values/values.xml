@@ -103,6 +103,7 @@
     <string name="no_usb_devices_attached_message">No USB devices are currently attached</string>
     <string name="password">Password</string>
     <string name="quit">Quit Jam</string>
+    <string name="record">Record</string>
     <string name="starter_app_name">Start Arduino Service</string>
     <string name="title_activity_display_user">DisplayUserActivity</string>
     <string name="usb_device_attached">USB device attached</string>

@@ -37,6 +37,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.val.databaseconnect_v2.Arduino_connect.usb.interfaces.Connectable;
 import com.val.databaseconnect_v2.Arduino_connect.usb.interfaces.Viewable;
@@ -109,7 +110,7 @@ public abstract class UsbActivity extends Activity implements Connectable {
                 }
             } catch (Exception ee) {
                 if (debug_) {
-                    Log.e(TAG, "Client handleMessage Exception: "+ Utils.getExceptionStack(ee, true));
+//                    Log.e(TAG, "Client handleMessage Exception: "+ Utils.getExceptionStack(ee, true));
                     //showMessage("handleMessage: " +ee.getMessage() + "\n");
                 }
             }
@@ -233,8 +234,7 @@ public abstract class UsbActivity extends Activity implements Connectable {
             resources_ = getResources();
         }
 
-        createAndSetViews();
-        logMessage("before register receiver");
+        Log.d("create&setViews", "before register receiver");
         //registerReceiver(usbReceiver_, filter);
 
         doBindService();
@@ -472,7 +472,7 @@ public abstract class UsbActivity extends Activity implements Connectable {
 
     public void logMessage(String msg, Exception e) {
         if (debug_) {
-            Log.d(TAG, msg + "\n" + Utils.getExceptionStack(e, true));
+//            Log.d(TAG, msg + "\n" + Utils.getExceptionStack(e, true));
         }
     }
 
