@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         style="@style/RedButton"
         android:text="@string/quit"/>
-    
+
     <Button
         android:id="@+id/recordButton"
         android:layout_above="@id/quitButton"
