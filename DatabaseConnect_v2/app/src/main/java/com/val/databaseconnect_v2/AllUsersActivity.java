@@ -94,6 +94,9 @@ public class AllUsersActivity extends ListActivity {
 	            try {
 	            	// check for SUCCESS_TAG
 	            	int success = json.getInt(TAG_SUCCESS);
+
+                    // new hashmap
+                    HashMap<String, String> map = new HashMap<String, String>();
 	            	
 	            	if(success==1) {
 	            		// users found, getting array of users
@@ -105,9 +108,7 @@ public class AllUsersActivity extends ListActivity {
 	            			
 	            			String username = c.getString(TAG_USERNAME);
 	            			String email = c.getString(TAG_EMAIL);
-	            			
-	            			// new hashmap
-	            			HashMap<String, String> map = new HashMap<String, String>();
+
 	            			
 	            			// add each child node to HashMap key => value
 	            			map.put(TAG_USERNAME, username);

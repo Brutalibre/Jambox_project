@@ -4,4 +4,4 @@
  	<!--<usb-accessory manufacturer="Google, Inc." model="DemoKit" version="1.0" />-->
     <!--<usb-accessory manufacturer="Circuits@Home, ltd." model="USB Host Shield" version="1.0" />-->
     <usb-accessory manufacturer="Arduino SA" model="JamBox" version="1.0"/>
-</resources><!-- From: file:/C:/Users/Val/AndroidstudioProjects/Jambox_project/DatabaseConnect_v2/app/src/main/res/xml/accessory_filter.xml -->
+</resources><!-- From: file:/C:/Users/Victor/Documents/GitHub/Jambox_project/DatabaseConnect_v2/app/src/main/res/xml/accessory_filter.xml -->
